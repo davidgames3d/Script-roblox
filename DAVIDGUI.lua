@@ -527,6 +527,23 @@ actionButton.MouseButton1Click:Connect(function()
     -- Aqui você pode executar outro script, função, etc.
 end)
 
+-- Exemplo de botão dentro do Hub
+local actionButton = Instance.new("TextButton")
+actionButton.Text = "forsaken"
+actionButton.Font = Enum.Font.Gotham
+actionButton.TextSize = 18
+actionButton.TextColor3 = Color3.new(1, 1, 1)
+actionButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+actionButton.Size = UDim2.new(0.8, 0, 0, 40)
+actionButton.Position = UDim2.new(0.1, 500, 0, 60)
+actionButton.Parent = hubFrame
+
+-- Ação do botão do hub (pode mudar)
+actionButton.MouseButton1Click:Connect(function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/ago106/SpaceHub/refs/heads/main/loader.lua'))()
+    -- Aqui você pode executar outro script, função, etc.
+end)
+
 -- Sistema Toggle do botão principal
 local hubAberto = false
 toggleButton.MouseButton1Click:Connect(function()
