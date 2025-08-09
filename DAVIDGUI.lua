@@ -535,7 +535,7 @@ actionButton.TextSize = 18
 actionButton.TextColor3 = Color3.new(1, 1, 1)
 actionButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
 actionButton.Size = UDim2.new(0.8, 0, 0, 40)
-actionButton.Position = UDim2.new(0.1, 500, 0, 60)
+actionButton.Position = UDim2.new(0.1, 0, 200, 90)
 actionButton.Parent = hubFrame
 
 -- Ação do botão do hub (pode mudar)
