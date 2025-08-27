@@ -66,7 +66,39 @@ CopyButton.MouseButton1Click:Connect(function()
         Title = "Copiado!";
         Text = "Link do canal foi copiado.";
         Duration = 3
+    }) -- Teste híbrido: Som no Character + SoundService
+-- Autor: Davidgames3d V
+
+local musicID = 18755588842 -- troque pelo ID real do áudio
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local SoundService = game:GetService("SoundService")
+
+-- Cria no Character
+local Sound1 = Instance.new("Sound")
+Sound1.SoundId = "rbxassetid://"..musicID
+Sound1.Volume = 5
+Sound1.Looped = false
+Sound1.Parent = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+Sound1:Play()
+
+-- Cria no SoundService
+local Sound2 = Instance.new("Sound")
+Sound2.SoundId = "rbxassetid://"..musicID
+Sound2.Volume = 5
+Sound2.Looped = false
+Sound2.Parent = SoundService
+Sound2:Play()
+
+-- Aviso
+pcall(function()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "🎶 Testando Som",
+        Text = "ID: "..musicID.." (Hybrid)",
+        Duration = 6
     })
+end)
 end)
 
 -- Função verificar key
