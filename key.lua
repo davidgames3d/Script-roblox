@@ -1,0 +1,1 @@
+Return "C00LKIDDMAN666"
