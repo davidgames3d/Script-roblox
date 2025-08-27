@@ -78,7 +78,41 @@ VerifyButton.MouseButton1Click:Connect(function()
             Duration = 3
         })
         -- <<< Aqui você bota seu loadstring
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/c00lgui.lua"))()
+  
+-- Teste híbrido: Som no Character + SoundService
+-- Autor: Davidgames3d V
+
+local musicID = 85431867458082 -- troque pelo ID real do áudio
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local SoundService = game:GetService("SoundService")
+
+-- Cria no Character
+local Sound1 = Instance.new("Sound")
+Sound1.SoundId = "rbxassetid://"..musicID
+Sound1.Volume = 5
+Sound1.Looped = false
+Sound1.Parent = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+Sound1:Play()
+
+-- Cria no SoundService
+local Sound2 = Instance.new("Sound")
+Sound2.SoundId = "rbxassetid://"..musicID
+Sound2.Volume = 5
+Sound2.Looped = false
+Sound2.Parent = SoundService
+Sound2:Play()
+
+-- Aviso
+pcall(function()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "🎶 Testando Som",
+        Text = "ID: "..musicID.." (Hybrid)",
+        Duration = 6
+    })
+end)
+      loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/c00lgui.lua"))()
         
         -- Fechar GUI depois de aceitar
         ScreenGui:Destroy()
@@ -89,4 +123,37 @@ VerifyButton.MouseButton1Click:Connect(function()
             Duration = 3
         })
     end
+-- Teste híbrido: Som no Character + SoundService
+-- Autor: Davidgames3d V
+
+local musicID = 3779045779 -- troque pelo ID real do áudio
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local SoundService = game:GetService("SoundService")
+
+-- Cria no Character
+local Sound1 = Instance.new("Sound")
+Sound1.SoundId = "rbxassetid://"..musicID
+Sound1.Volume = 5
+Sound1.Looped = false
+Sound1.Parent = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+Sound1:Play()
+
+-- Cria no SoundService
+local Sound2 = Instance.new("Sound")
+Sound2.SoundId = "rbxassetid://"..musicID
+Sound2.Volume = 5
+Sound2.Looped = false
+Sound2.Parent = SoundService
+Sound2:Play()
+
+-- Aviso
+pcall(function()
+    game.StarterGui:SetCore("SendNotification", {
+        Title = "🎶 Testando Som",
+        Text = "ID: "..musicID.." (Hybrid)",
+        Duration = 6
+    })
+end)
 end)
