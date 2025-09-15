@@ -61,8 +61,10 @@ VerifyButton.Parent = Frame
 
 -- Função copiar link
 CopyButton.MouseButton1Click:Connect(function()
-    setclipboard("https://youtube.com/@davidgames3d?si=HuQTRLT5i7AQGl0c") -- <<< link do canal
-    game:GetService("StarterGui"):SetCore("SendNotification", {
+    setclipboard("https://youtube.com/@davidgames3d?si=HuQTRLT5i7AQGl0c")
+
+setclipboard("https://youtube.com/@dduduols?si=ZyXmBZHUa4ynFWL4") 
+ game:GetService("StarterGui"):SetCore("SendNotification", {
         Title = "Copiado!";
         Text = "Link do canal foi copiado.";
         Duration = 3
