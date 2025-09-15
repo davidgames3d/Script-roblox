@@ -1,9 +1,11 @@
 -- // GUI TOGGLE SCRIPT PARA DELTA EXECUTOR \\ --
--- Autor: Davidgames3d V 
+-- Autor: Daviganes3d V and DuduzinOLS
 
 if game.CoreGui:FindFirstChild("c00lkidGui") then
     game.CoreGui.c00lkidGui:Destroy()
 end
+
+local TweenService = game:GetService("TweenService")
 
 local gui = Instance.new("ScreenGui")
 gui.Name = "c00lkidGui"
@@ -33,16 +35,26 @@ toggle.Draggable = true
 local frame = Instance.new("Frame")
 frame.Name = "MiniJanela"
 frame.Parent = gui
-frame.Size = UDim2.new(0, 500, 0, 300)
-frame.Position = UDim2.new(0.2, 0, 0, 0)
+frame.Size = UDim2.new(0, 500, 0, 350)
+frame.Position = UDim2.new(0.2, 0, -0.5, 0) -- comeÃ§a fora da tela (em cima)
 frame.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-frame.BackgroundTransparency = 0.3
+frame.BackgroundTransparency = 1
 frame.Visible = false
 
--- TÃ­tulo
+-- Imagem do c00lkidd (fica acima do tÃ­tulo)
+local image = Instance.new("ImageLabel")
+image.Parent = frame
+image.Size = UDim2.new(0.3, 0, 0.3, 0)
+image.Position = UDim2.new(0.35, 0, 0.05, 0)
+image.BackgroundTransparency = 1
+image.Image = "rbxassetid://SEU_ID_DE_IMAGEM_AQUI" -- coloque o ID da sua imagem aqui
+image.ScaleType = Enum.ScaleType.Fit
+
+-- TÃ­tulo (logo abaixo da imagem)
 local label = Instance.new("TextLabel")
 label.Parent = frame
-label.Size = UDim2.new(1, 0, 0.15, 0)
+label.Size = UDim2.new(1, 0, 0.1, 0)
+label.Position = UDim2.new(0, 0, 0.38, 0)
 label.BackgroundTransparency = 1
 label.Text = "c00lkid"
 label.TextColor3 = Color3.fromRGB(255,255,255)
@@ -52,25 +64,52 @@ label.Font = Enum.Font.SourceSansBold
 -- Container para os botÃµes
 local container = Instance.new("Frame")
 container.Parent = frame
-container.Size = UDim2.new(1, -10, 0.8, -10)
-container.Position = UDim2.new(0, 5, 0.18, 0)
+container.Size = UDim2.new(1, -10, 0.55, -10)
+container.Position = UDim2.new(0, 5, 0.5, 0)
 container.BackgroundTransparency = 1
 
 -- Layout automÃ¡tico em grade
 local grid = Instance.new("UIGridLayout")
 grid.Parent = container
-grid.CellSize = UDim2.new(0.45, 0, 0.2, 0) -- largura e altura dos botÃµes
-grid.CellPadding = UDim2.new(0.05, 0, 0.05, 0) -- espaÃ§amento entre os botÃµes
-grid.FillDirectionMaxCells = 2 -- 2 colunas
+grid.CellSize = UDim2.new(0.45, 0, 0.2, 0)
+grid.CellPadding = UDim2.new(0.05, 0, 0.05, 0)
+grid.FillDirectionMaxCells = 2
 grid.HorizontalAlignment = Enum.HorizontalAlignment.Center
 grid.VerticalAlignment = Enum.VerticalAlignment.Top
+
+-- FunÃ§Ãµes para animar fade + slide
+local function fadeIn()
+    frame.Visible = true
+    -- move para posiÃ§Ã£o inicial (fora da tela)
+    frame.Position = UDim2.new(0.2, 0, -0.5, 0)
+    frame.BackgroundTransparency = 1
+    -- anima para dentro da tela
+    TweenService:Create(frame, TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.Out), {
+        Position = UDim2.new(0.2, 0, 0, 0),
+        BackgroundTransparency = 0.3
+    }):Play()
+end
+
+local function fadeOut()
+    local tween = TweenService:Create(frame, TweenInfo.new(0.6, Enum.EasingStyle.Quad, Enum.EasingDirection.In), {
+        Position = UDim2.new(0.2, 0, -0.5, 0),
+        BackgroundTransparency = 1
+    })
+    tween:Play()
+    tween.Completed:Wait()
+    frame.Visible = false
+end
 
 -- Toggle abre/fecha
 local aberto = false
 toggle.MouseButton1Click:Connect(function()
     playClick()
     aberto = not aberto
-    frame.Visible = aberto
+    if aberto then
+        fadeIn()
+    else
+        fadeOut()
+    end
 end)
 
 -- FunÃ§Ã£o criar botÃµes
@@ -90,7 +129,7 @@ local function criarBotao(nome, scriptUrl)
     end)
 end
 
--- Criando botÃµes organizados automaticamente
+-- Criando botÃµes
 criarBotao("C00lgui v1 reborn", "https://rawscripts.net/raw/Universal-Script-c00lgui-Reborn-Rc7-by-v3rx-48261")
 criarBotao("C00lgui deluxe", "https://rawscripts.net/raw/Universal-Script-FE-C00LKID-F3X-SCRIPT-40126")
 criarBotao("C00lkid gui", "https://rawscripts.net/raw/Universal-Script-c00lkid-GUI-36102")
