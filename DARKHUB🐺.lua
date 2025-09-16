@@ -646,6 +646,6 @@ end})
 local Tab1 = Window:MakeTab({"personalizar", "personalizar"})
 
 Tab1:AddButton({"tema roxo", function(Value)
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/DARKHUB🟣.lua"))()
 print("Hello World!")
 end})
