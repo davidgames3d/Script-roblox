@@ -38,6 +38,21 @@ Tab1:AddSlider({
   end
 })
 
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+Tab1:AddSlider({
+    Name = "Jump Power",
+    Min = 10,
+    Max = 200,
+    Increase = 1,
+    Default = 50,
+    Callback = function(Value)
+        humanoid.JumpPower = Value
+    end
+})
+
 local Tab1 = Window:MakeTab({"universal🌏", "universal🌏"})
 
 Tab1:AddButton({"painel HD admin", function(Value)
