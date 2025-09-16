@@ -669,3 +669,10 @@ Tab1:AddButton({"saturn hub", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/JScripter-Lua/Saturn_Hub_Products/refs/heads/main/Saturn_Hub_Doors.lua"))() 
 print("Hello World!")
 end})
+
+local Tab1 = Window:MakeTab({"glow a Garden🌻", "glow a Garden🌻"})
+
+Tab1:AddButton({"SPEED HUB", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+print("Hello World!")
+end})
