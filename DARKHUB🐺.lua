@@ -642,3 +642,10 @@ Tab1:AddButton({"The DarKones", function(Value)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/refs/heads/main/99%20Nights%20In%20The%20Forest%20GUI'))()
 print("Hello World!")
 end}) 
+
+local Tab1 = Window:MakeTab({"personalizar", "personalizar"})
+
+Tab1:AddButton({"tema roxo", function(Value)
+
+print("Hello World!")
+end})
