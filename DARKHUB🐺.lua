@@ -11,32 +11,6 @@ Window:AddMinimizeButton({
     Corner = { CornerRadius = UDim.new(35, 1) },
 })
 
-  local Dialog = Window:Dialog({
-    Title = "bem-vindo(a) ",
-    Text = "vá para o canal dos Criadores no YouTube ou vá no server para nós ajudar",
-    Options = {
-      {"Confirmar", function()
-        local button = script.Parent
-local textBox = Instance.new("TextBox")
-textBox.Text = "https://youtube.com/@davidgames3d?si=OvLJm13gtM0oQqnA"
-textBox.Size = UDim2.new(0,0,0,0) -- invisível
-textBox.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-
-button.MouseButton1Click:Connect(function()
-    textBox:CaptureFocus()
-    textBox.Text = textBox.Text -- deixa selecionado
-    print("Agora é só o jogador apertar Ctrl+C ou copiar no celular 😏")
-end)
-      end},
-      {"não", function()
-        
-      end},
-      {"depois", function()
-        
-      end}
-    }
-  })
-
 Tab1:AddDiscordInvite({
     Name = "davidgames3d server",
     Description = "Junte-se a nós",
