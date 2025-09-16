@@ -676,3 +676,48 @@ Tab1:AddButton({"SPEED HUB", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"UB HUB", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/TeamUBHub/Script-Roblox/refs/heads/main/Grow%20a%20Garden.lua"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"fryzerHub", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FryzerHub/Key-system-gui/refs/heads/main/GAG%20AUTO%20FARM%20v2"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"auto Shell/auto buy", function(Value)
+loadstring(game:HttpGet(“https://rawscripts.net/raw/Grow-a-Garden-Best-Grow-a-Garden-Script-38072”))(“t.me/scripts_lol”)
+print("Hello World!")
+end})
+
+Tab1:AddButton({"glow a Garden rifton", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/si9kTaT3", true))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"Than HUB", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/txWTGFRZ", true))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"auto harvest plus", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/depthso/Grow-a-Garden/refs/heads/main/autofarm.lua"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"MIMI HUB", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jstarzz/petmover/refs/heads/main/main.lua", true))()
+print("Hello World!")
+end}) 
+
+Tab1:AddButton({"JN HUB", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/A7us0FyY", true))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"FfJHuB", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
+print("Hello World!")
+end})
