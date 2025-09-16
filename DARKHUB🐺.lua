@@ -11,6 +11,22 @@ Window:AddMinimizeButton({
     Corner = { CornerRadius = UDim.new(35, 1) },
 })
 
+  local Dialog = Window:Dialog({
+    Title = "bem-vindo(a) ",
+    Text = "vá para o canal dos Criadores no YouTube ou vá no server para nós ajudar",
+    Options = {
+      {"Confirmar", function()
+        
+      end},
+      {"não obrigado", function()
+        
+      end},
+      {"mais tarde", function()
+        
+      end}
+    }
+  })
+
 Tab1:AddDiscordInvite({
     Name = "davidgames3d server",
     Description = "Junte-se a nós",
