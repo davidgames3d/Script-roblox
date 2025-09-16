@@ -643,9 +643,15 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcilliseP
 print("Hello World!")
 end}) 
 
-local Tab1 = Window:MakeTab({"personalizar", "personalizar"})
+local Tab1 = Window:MakeTab({"creditos", "creditos"})
 
-Tab1:AddButton({"tema roxo", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/DARKHUB🟣.lua"))()
+local Paragraph = Tab1:AddParagraph({"REDES SÓCIAS", "SIGA O CANAL E\ AS REDES SOCIAIS DOS CRIADORES"})
+
+local Paragraph = Tab1:AddParagraph({"Youtube", "YOUTUBE:DAVIDGAMES3D"})
+
+Tab1:AddButton({"acesse meu canal", function(Value)
+GuiService:OpenBrowserWindow("https://youtube.com/@davidgames3d?si=OvLJm13gtM0oQqnA")
 print("Hello World!")
 end})
+
+ 
