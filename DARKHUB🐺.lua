@@ -625,37 +625,4 @@ end})
 Tab1:AddButton({"The DarKones", function(Value)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcillisePex/Other-Scripts/refs/heads/main/99%20Nights%20In%20The%20Forest%20GUI'))()
 print("Hello World!")
-end}) 
-
-local Tab1 = Window:MakeTab({"doors🚪👁", "doors🚪👁"})
-
-Tab1:AddButton({"astral hub", function(Value)
-loadstring(game:HttpGet("https://pastebin.com/raw/8cKJvTwg"))()
-print("Hello World!")
-end})
-
-Tab1:AddButton({"saturn hub🪐", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/JScripter-Lua/Saturn_Hub_Products/refs/heads/main/Saturn_Hub_Doors.lua"))() 
-print("Hello World!")
-end})
-
-Tab1:AddButton({"NullFire", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/NuIlFire/NullFire/main/loader.lua"))()
-print("Hello World!")
-end})
-
-Tab1:AddButton({"KODBOL HUB", function(Value)
-loadstring(game:HttpGet(('https://pastefy.app/awczkDwJ/raw'),true))()
-print("Hello World!")
-end})
-
-Tab1:AddButton({"TOOL GIVER DOORS", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/Entities/refs/heads/main/Tools"))()
-print("Hello World!")
-end}
-
-Tab1:AddButton({"P
-KittyCat", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/CatEnddroid/Kitty-Cats-Doors-Beta/refs/heads/main/hub.lua"))()
-print("Hello World!")
 end})
