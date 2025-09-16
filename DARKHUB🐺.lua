@@ -701,3 +701,10 @@ Tab1:AddButton({"infinite money dupe", function(Value)
 loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-KEYLESS-Grow-a-garden-INFINITE-MONEY-DUPE-auto-farm-script-41396"))()
 print("Hello World!")
 end})
+
+local Tab1 = Window:MakeTab({"natural disaster", "natural disaster""})
+
+Tab1:AddButton({"xvc hub", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/Piw5bqGq"))()
+print("Hello World!")
+end})
