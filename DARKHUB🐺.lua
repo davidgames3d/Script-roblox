@@ -1275,3 +1275,14 @@ print("Hello World!")
 end})
 
 local Tab1 = Window:MakeTab({"trollagem🤣", "trollagem🤣"})
+
+
+Tab1:AddButton({"music player gui", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/Music%20playey.lua"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"Print", function(Value)
+
+print("Hello World!")
+end})
