@@ -1287,7 +1287,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/KATERGaming/Roblox/ma
 print("Hello World!")
 end})
 
-Tab1:AddButton({"Print", function(Value)
-
+Tab1:AddButton({"FE Trolling GUI", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
 print("Hello World!")
 end})
