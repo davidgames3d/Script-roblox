@@ -123,7 +123,8 @@ local Toggle1 = Tab1:AddToggle({
   Default = false 
 })
 Toggle1:Callback(function(Value)
- -- Cria o part e o mesh
+while true do
+
 local dued = Instance.new("Part", workspace)
 local mesh = Instance.new("SpecialMesh", dued)
 mesh.MeshType = Enum.MeshType.FileMesh
@@ -132,6 +133,8 @@ mesh.TextureId = "rbxassetid://8905201311"
 
 dued.Size = Vector3.new(1, 1, 1)
 dued.Anchored = false
+
+wait(0.1)
 
 -- Loop zoeiro infinito
 while true do
