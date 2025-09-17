@@ -1291,3 +1291,8 @@ Tab1:AddButton({"FE Trolling GUI", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/yofriendfromschool1/Sky-Hub/main/FE%20Trolling%20GUI.luau"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"soluna troll brookhaven", function(Value)
+loadstring(game:HttpGet("https://soluna-script.vercel.app/brookhaven.lua",true))()
+print("Hello World!")
+end})
