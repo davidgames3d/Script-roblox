@@ -117,3 +117,37 @@ end})
 
 local Tab1 = Window:MakeTab({"spawnar mash", "spawnar mash"})
 
+local Toggle1 = Tab1:AddToggle({
+  Name = "loop de cachorro",
+  Description = "This is a <font color='rgb(88, 101, 242)'>Toggle</font> Example",
+  Default = false 
+})
+Toggle1:Callback(function(Value)
+ -- Cria o part e o mesh
+local dued = Instance.new("Part", workspace)
+local mesh = Instance.new("SpecialMesh", dued)
+mesh.MeshType = Enum.MeshType.FileMesh
+mesh.MeshId = "rbxassetid://8905201196"
+mesh.TextureId = "rbxassetid://8905201311"
+
+dued.Size = Vector3.new(1, 1, 1)
+dued.Anchored = false
+
+-- Loop zoeiro infinito
+while true do
+    -- Movimento aleatório
+    local dx = math.random(-5,5)/10
+    local dy = math.random(1,5)/5
+    local dz = math.random(-5,5)/10
+    dued.Position = dued.Position + Vector3.new(dx, dy, dz)
+
+    -- Gira o part aleatoriamente
+    dued.CFrame = dued.CFrame * CFrame.Angles(
+        math.rad(math.random(-30,30)),
+        math.rad(math.random(-30,30)),
+        math.rad(math.random(-30,30))
+    )
+
+    wait(0.1)
+end
+end)
