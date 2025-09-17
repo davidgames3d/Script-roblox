@@ -1296,3 +1296,8 @@ Tab1:AddButton({"soluna troll brookhaven", function(Value)
 loadstring(game:HttpGet("https://soluna-script.vercel.app/brookhaven.lua",true))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"conquista fake doors", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/conquista%20falsa%20doors.lua"))()
+print("Hello World!")
+end})
