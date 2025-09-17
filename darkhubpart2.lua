@@ -116,7 +116,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/qwertys
 print("Hello World!")
 end})
 
-Tab1:AddButton({"Print", function(Value)
-
+Tab1:AddButton({"noli fe", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/qwertys/refs/heads/main/qwerty0.lua"))()
 print("Hello World!")
 end})
