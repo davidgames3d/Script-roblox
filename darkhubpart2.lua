@@ -110,8 +110,3 @@ Tab1:AddButton({"conquista fake doors", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/conquista%20falsa%20doors.lua"))()
 print("Hello World!")
 end}) 
-
-Tab1:AddButton({"Print", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/controlnpc.lua"))()
-print("Hello World!")
-end})
