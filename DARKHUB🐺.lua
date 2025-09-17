@@ -19,29 +19,10 @@ Window:AddMinimizeButton({
         
       end},
       {"obrigado", function()
-local SoundId = "rbxassetid://452267918"
 
-local Sound = Instance.new("Sound")
-Sound.SoundId = SoundId
-Sound.Volume = 1 -- volume (0 a 10)
-Sound.Looped = true -- true = música repete, false = toca uma vez
-Sound.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
-
-Sound:Play()
       end},
       {"depois", function()
-        -- Script simples para tocar som/música no Roblox
--- Coloque esse script como LocalScript
-
-local SoundId = "rbxassetid://560114574" -- coloque o ID do som/música aqui
-
-local Sound = Instance.new("Sound")
-Sound.SoundId = SoundId
-Sound.Volume = 1 -- volume (0 a 10)
-Sound.Looped = true -- true = música repete, false = toca uma vez
-Sound.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
-
-Sound:Play()
+ 
       end}
     }
   })
