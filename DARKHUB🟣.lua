@@ -1,4 +1,13 @@
-", BackgroundTransparency = 0 },
+local redzlib = loadstring(game:HttpGet("https://raw.githubusercontent.com/tbao143/Library-ui/refs/heads/main/Redzhubui"))()
+local Window = redzlib:MakeWindow({
+  Title = "dark hub : Universal",
+  SubTitle = "by davidgames3d",
+  SaveFolder = "testando | redz lib v5.lua"
+})
+local Tab1 = Window:MakeTab({"main", "main"})
+
+Window:AddMinimizeButton({
+    Button = { Image = "rbxassetid://9265687294", BackgroundTransparency = 0 },
     Corner = { CornerRadius = UDim.new(35, 1) },
 })
 
@@ -9,10 +18,10 @@
       {"Confirmar", function()
         
       end},
-      {"não obrigado", function()
+      {"obrigado", function()
         
       end},
-      {"mais tarde", function()
+      {"depois", function()
         
       end}
     }
@@ -61,6 +70,11 @@ Tab1:AddSlider({
 })
 
 local Tab1 = Window:MakeTab({"universal🌏", "universal🌏"})
+
+Tab1:AddButton({"player emote", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Emotes-Player-and-Catalog-Searcher-52056"))()
+print("Hello World!")
+end})
 
 Tab1:AddButton({"painel HD admin", function(Value)
  loadstring(game:HttpGet("https://pastebin.com/raw/KMp8Jvsa",true))() ----------- Intro GUI
@@ -399,6 +413,11 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Tiger-hub-x
 print("tiger hub")
 end})   
 
+Tab1:AddButton({"afem Animation pack", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-AFEM-14048"))()
+print("Hello World!")
+end})
+
 local Tab1 = Window:MakeTab({"brookhaven🏡", "brookhaven🏡"})
 
 Tab1:AddButton({"sander xy", function(Value) 
@@ -497,6 +516,31 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Soup182/Soup-Hub-Dand
 print("Hello World!")
 end})
 
+Tab1:AddButton({"aussie wire", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/9xvD1pig", true))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"abraço hub?", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/BobJunior1/Sup/refs/heads/main/Bobhub"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"astral hub", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/StarlessScripts/Astral-Dandy-s-world/refs/heads/main/Starless"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"dandy World mobile", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/Y7uh3UZf"))();
+print("Hello World!")
+end})
+
+Tab1:AddButton({"dandy World gui", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/gumanba/Scripts/main/Dandy"))()
+print("Hello World!")
+end})
+
 local Tab1 = Window:MakeTab({"forsaken🏚", "forsaken🏚"})
 
 Tab1:AddButton({"forsaken spy", function(Value)
@@ -520,6 +564,21 @@ task.spawn(function()
 		StaminaModule.StaminaChanged:Fire()
 	end
 end)
+print("Hello World!")
+end})
+
+Tab1:AddButton({"funny hub", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Forsaken-Funny-Hub-V2-42056"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"rift forsaken", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Slasher-Forsaken-gi-51733"))()
+print("Hello World!")
+end}) 
+
+Tab1:AddButton({"atherhub forsaken", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Slasher-Forsaken-Atherhub-Forsaken-OVERPOWERED-AUTO-GENERATOR-AND-SPEED-51096"))()
 print("Hello World!")
 end})
 
@@ -634,9 +693,235 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcilliseP
 print("Hello World!")
 end}) 
 
-local Tab1 = Window:MakeTab({"personalizar", "personalizar"})
+local Tab1 = Window:MakeTab({"doors🚪👁", "doors🚪👁"})
 
-Tab1:AddButton({"tema escuro", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/DARKHUB🐺.lua"))()
+Tab1:AddButton({"KITTY CATS DOORS", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CatEnddroid/Kitty-Cats-Doors-Beta/refs/heads/main/hub.lua"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"spawn tools", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Darli17/Entities/refs/heads/main/Tools"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"doors script", function(Value)
+loadstring(game:HttpGet(('https://pastefy.app/awczkDwJ/raw'),true))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"NullFire", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/NuIlFire/NullFire/main/loader.lua"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"saturn hub", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/JScripter-Lua/Saturn_Hub_Products/refs/heads/main/Saturn_Hub_Doors.lua"))() 
+print("Hello World!")
+end}) 
+
+local Tab1 = Window:MakeTab({"glow a Garden🌻", "glow a Garden🌻"})
+
+Tab1:AddButton({"ffj1", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"glow a garden", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/A7us0FyY", true))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"jstarzz", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Jstarzz/petmover/refs/heads/main/main.lua", true))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"glow a Garden auto", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-Best-Script-working-auto-53253"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"rift hub glow a garden", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-Freeze-All-Pets-43750"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"infinite money dupe", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-KEYLESS-Grow-a-garden-INFINITE-MONEY-DUPE-auto-farm-script-41396"))()
+print("Hello World!")
+end})
+
+local Tab1 = Window:MakeTab({"natural disastre", "natural disastre"})
+
+Tab1:AddButton({"xvc hub", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/Piw5bqGq"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"null Fire solara", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fire-Hub-Solara-and-mobile-support-17673"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"nds hub", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Natural-Disaster-Survival-Katers-NDS-Hub-19533"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"jesus sobre a água", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Natural-Disaster-Survival-Choose-Map-NoFall-WaterWalk-7793"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"auto farm", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Natural-Disaster-Survival-Auto-Farm-5285"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"i was here", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Natural-Disaster-Survival-I-was-here-3355"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"comprehensive gui", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Comprehensive-GUI_182"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"free ballon giver", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Free-CLIENTSIDED-Balloon-Giver!_175"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"6 games", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Unique-Hub-v2-(6-Games)-2745"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"server breaker", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Natural-Disaster-Survival-natural-disaster-survival-server-breaker-53457"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"fe fling gui", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-Flinger-GUI-WORKS-ANYWHERE-53326"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"blueRed hub", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-BlueRed-Hub-V21-48687"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"dollar hub", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Dollar-Hub-47561"))()
+print("Hello World!")
+end})
+
+local Tab1 = Window:MakeTab({"R6 and r15", "R6 and r15"})
+
+Tab1:AddButton({"change rig type", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Change-Rig-Type-29217"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"animate R6-R15 fe", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-LX63-FE-animate-R6-R15-1170"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"DcruzRace", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-DcruzRace-GUI-53539"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"fe laser r6", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Green-baseplate.-fe-laser-script-r6-53197"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"click fling", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-better-click-fling-universal-52247"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"fe ghost", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ghost-51951"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"rscripter hub", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Rscripter-Hub-52549"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"rewind time", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Rewind-time-52957"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"combat r6", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Combat-Script-r6-Only-52184"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"r15 free bundles", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Free-Bundles-R15-3356"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"dog or cat R15", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fe-dog-or-cat-R15-ONLY-53314"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"roblox egor", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-roblox-egor-script-53041"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"head remover", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Head-Remover-51769"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"vr7", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/tomtom's-Place-VR7-51692"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"snake avatar", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Snake-Avatar-51248"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"script fe r15", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-SCRIPT-FE-R15-51561"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"fe dog", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Green-baseplate.-Fe-dog-by-me-and-someone-51615"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"best hub 50 scripts", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Best-hub-50-scripts-plus-50250"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"remains hub v2", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-RemainsHub-V2-50805"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"hamsterball", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Remade-hamsterball-script-41893"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"zero gravity", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Zero-Gravity-28484"))()
 print("Hello World!")
 end})
