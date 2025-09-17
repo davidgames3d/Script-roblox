@@ -114,6 +114,3 @@ Tab1:AddButton({"Print", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/controlnpc.lua"))()
 print("Hello World!")
 end})
-
-local Tab1 = Window:MakeTab({"spawnar mash", "spawnar mash"})
-
