@@ -30,7 +30,7 @@ Window:AddMinimizeButton({
 Tab1:AddDiscordInvite({
     Name = "davidgames3d server",
     Description = "Junte-se a nós",
-    Logo = "rbxassetid://85431867458082",
+    Logo = "rbxassetid://135633099813904",
     Invite = "https://discord.gg/qXkvYQYKZG",
 })
 
