@@ -1027,6 +1027,16 @@ end})
 
 local Tab1 = Window:MakeTab({"R6 and r15", "R6 and r15"})
 
+Tab1:AddButton({"hacker FE", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Legenda06/Client-Replication/main/Fe"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"FE MONSTER", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/0Ben1/fe/main/obf_rTvXTs8F16D8D2oiLxZ62E1E9jT1we312yUyJr2h72Vwqr32l37rirU1S89hqRV7.lua.txt"))()
+print("Hello World!")
+end})
+
 Tab1:AddButton({"change rig type", function(Value)
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Change-Rig-Type-29217"))()
 print("Hello World!")
