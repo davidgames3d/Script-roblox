@@ -693,6 +693,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcilliseP
 print("Hello World!")
 end}) 
 
+Tab1:AddButton({"auto Farm and more", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/99-Nights-in-the-Forest-STRONGHOLDS-KEYLESS-auto-farm-bring-item-teleports-and-more-by-Moondiety-44416"))()
+print("Hello World!")
+end})
+
 local Tab1 = Window:MakeTab({"doors🚪👁", "doors🚪👁"})
 
 Tab1:AddButton({"KITTY CATS DOORS", function(Value)
