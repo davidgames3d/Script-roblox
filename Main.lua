@@ -1,0 +1,65 @@
+
+local Tab1 = Window:MakeTab({"main", "main"})
+
+Window:AddMinimizeButton({
+    Button = { Image = "rbxassetid://9265687294", BackgroundTransparency = 0 },
+    Corner = { CornerRadius = UDim.new(35, 1) },
+})
+
+  local Dialog = Window:Dialog({
+    Title = "bem-vindo(a) ",
+    Text = "vá para o canal dos Criadores no YouTube ou vá no server para nós ajudar",
+    Options = {
+      {"Confirmar", function()
+        
+      end},
+      {"obrigado", function()
+
+      end},
+      {"depois", function()
+ 
+      end}
+    }
+  })
+
+Tab1:AddDiscordInvite({
+    Name = "davidgames3d server",
+    Description = "Junte-se a nós",
+    Logo = "rbxassetid://6604011398",
+    Invite = "https://discord.gg/qXkvYQYKZG",
+})
+
+local Paragraph = Tab1:AddParagraph({"aviso", "entre no nosso server para novos scripts e vídeos no YouTube para ajudar o criador"})
+
+Tab1:AddSlider({
+  Name = "Speed",
+  Min = 1,
+  Max = 100,
+  Increase = 1,
+  Default = 16,
+  Callback = function(Value)
+      -- Pega o personagem local
+      local player = game.Players.LocalPlayer
+      local character = player.Character or player.CharacterAdded:Wait()
+      local humanoid = character:FindFirstChildOfClass("Humanoid")
+
+      if humanoid then
+          humanoid.WalkSpeed = Value -- muda a velocidade para o valor do slider
+      end
+  end
+})
+
+local player = game.Players.LocalPlayer
+local character = player.Character or player.CharacterAdded:Wait()
+local humanoid = character:WaitForChild("Humanoid")
+
+Tab1:AddSlider({
+    Name = "Jump Power",
+    Min = 10,
+    Max = 200,
+    Increase = 1,
+    Default = 50,
+    Callback = function(Value)
+        humanoid.JumpPower = Value
+    end
+})
