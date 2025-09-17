@@ -110,18 +110,3 @@ Tab1:AddButton({"conquista fake doors", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/conquista%20falsa%20doors.lua"))()
 print("Hello World!")
 end}) 
-
-Tab1:AddButton({"c00lkidd fe", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/qwertys/refs/heads/main/qwerty2.lua"))()
-print("Hello World!")
-end})
-
-Tab1:AddButton({"noli fe", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/qwertys/refs/heads/main/qwerty0.lua"))()
-print("Hello World!")
-end})
-
-Tab1:AddButton({"fe fake vr", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/Qwerty/refs/heads/main/qwerty45.lua"))()
-print("Hello World!")
-end})
