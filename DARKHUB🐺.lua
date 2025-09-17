@@ -1274,7 +1274,4 @@ loadstring(game:HttpGet("https://noxhub.store/loader"))()
 print("Hello World!")
 end})
 
-Tab1:AddButton({"Print", function(Value)
-
-print("Hello World!")
-end})
+local Tab1 = Window:MakeTab({"trollagem🤣", "trollagem🤣"})
