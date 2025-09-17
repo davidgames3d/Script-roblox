@@ -1282,6 +1282,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-r
 print("Hello World!")
 end})
 
+Tab1:AddButton({"kater hub universal", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KATERGaming/Roblox/main/KaterHub.Lua"))()
+print("Hello World!")
+end})
+
 Tab1:AddButton({"Print", function(Value)
 
 print("Hello World!")
