@@ -71,6 +71,26 @@ Tab1:AddSlider({
 
 local Tab1 = Window:MakeTab({"universal🌏", "universal🌏"})
 
+Tab1:AddButton({"knife", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/MYsVtALF"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"c00lgui v1", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Angelo-Gitland/c00lkidd-Gui-V1-By-Lua-land/refs/heads/main/c00lkidd%20Gui%20V1%20By%20Lua%20Land"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"c00lgui rework", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-C00lgui-Rework-46970"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"fearless gui", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/synkixr/FEARLESS-GUI/refs/heads/main/fearless-gui-by-synkixr"))()
+print("Hello World!")
+end})
+
 Tab1:AddButton({"raid hub", function(Value)
 loadstring(game:HttpGet('https://pastebin.com/raw/TPBeBqmC'))()
 print("Hello World!")
@@ -902,6 +922,11 @@ print("Hello World!")
 end}) 
 
 local Tab1 = Window:MakeTab({"glow a Garden🌻", "glow a Garden🌻"})
+
+Tab1:AddButton({"auto Farm gui", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-GAG-Auto-Farm-GUI-Keyless-41847"))()
+print("Hello World!")
+end})
 
 Tab1:AddButton({"ffj1", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FFJ1/Roblox-Exploits/main/scripts/Loader.lua"))()
