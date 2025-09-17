@@ -110,3 +110,29 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-r
 print("Hello World!")
 end}) 
 
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+-- Espera o personagem carregar
+local Character = LocalPlayer.Character or LocalPlayer.CharacterAdded:Wait()
+local Head = Character:WaitForChild("Head")
+local HeadMesh = Head:FindFirstChildWhichIsA("SpecialMesh")
+
+-- Caso não exista, cria um Mesh pra cabeça
+if not HeadMesh then
+    HeadMesh = Instance.new("SpecialMesh")
+    HeadMesh.MeshType = Enum.MeshType.Head
+    HeadMesh.Parent = Head
+end
+
+-- Slider para mudar o tamanho da cabeça
+Tab1:AddSlider({
+    Name = "Head Size",
+    Min = 1,
+    Max = 100, -- Ajusta o máximo que quiser
+    Increase = 0.1,
+    Default = 1,
+    Callback = function(Value)
+        HeadMesh.Scale = Vector3.new(Value, Value, Value)
+    end
+})
