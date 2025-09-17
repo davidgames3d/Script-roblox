@@ -70,6 +70,7 @@ Tab1:AddSlider({
 })
 
 Tab1:AddButton({"parte 2 do hub", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/darkhubpart2.lua"))()
 print("Hello World!")
 end})
 
