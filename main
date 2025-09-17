@@ -1,4 +1,4 @@
-
+ 
 local Tab1 = Window:MakeTab({"main", "main"})
 
 Window:AddMinimizeButton({
