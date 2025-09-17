@@ -4,6 +4,7 @@ local Window = redzlib:MakeWindow({
   SubTitle = "by davidgames3d",
   SaveFolder = "testando | redz lib v5.lua"
 })
+
 local Tab1 = Window:MakeTab({"main", "main"})
 
 Window:AddMinimizeButton({
