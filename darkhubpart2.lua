@@ -111,6 +111,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-r
 print("Hello World!")
 end}) 
 
+Tab1:AddButton({"c00lkidd fe", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/randomstring0/qwertys/refs/heads/main/qwerty2.lua"))()
+print("Hello World!")
+end})
+
 Tab1:AddButton({"Print", function(Value)
 
 print("Hello World!")
