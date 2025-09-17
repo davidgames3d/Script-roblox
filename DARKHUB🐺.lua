@@ -1132,7 +1132,7 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Zero-Gravit
 print("Hello World!")
 end})
 
-local Tab1 = Window:MakeTab({"murder Mystery 2", "murder Mystery 2"})
+local Tab1 = Window:MakeTab({"murder Mystery 2🔪", "murder Mystery 2🔪"})
 
 Tab1:AddButton({"instawin and xray", function(Value)
 loadstring(game:HttpGet("https://rawscripts.net/raw/Murder-Mystery-2-KEYLESS-InstaWin-AutoFarm-Kill-all-XRay-nd-more-by-Moondiety-48644"))()
@@ -1178,5 +1178,36 @@ end})
 
 Tab1:AddButton({"foggy hub", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/foggy-loader/refs/heads/main/loader"))()
+print("Hello World!")
+end})
+
+local Tab1 = Window:MakeTab({"dead rails", "dead rails"})
+
+Tab1:AddButton({"nathub", function(Value) loadstring(game:HttpGet("https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/NatHub.lua"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"dead rails hack mod", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/9xvD1pig", true))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"auto ufo challenge", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/yoursvexyyy/deadrails/refs/heads/main/autoufo"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"tn hub", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/thiennrb7/Script/refs/heads/main/Bringall"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"hoho Dead rails", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"moon hub", function(Value)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Moondiety/refs/heads/main/Loader'))()
 print("Hello World!")
 end})
