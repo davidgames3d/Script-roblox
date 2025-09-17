@@ -958,7 +958,7 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-KEYLESS-Grow-a
 print("Hello World!")
 end})
 
-local Tab1 = Window:MakeTab({"natural disastre", "natural disastre"})
+local Tab1 = Window:MakeTab({"natural disastre🌋", "natural disastre🌋"})
 
 Tab1:AddButton({"xvc hub", function(Value)
 loadstring(game:HttpGet("https://pastebin.com/raw/Piw5bqGq"))()
@@ -1025,7 +1025,7 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Dollar-Hub-
 print("Hello World!")
 end})
 
-local Tab1 = Window:MakeTab({"R6 and r15", "R6 and r15"})
+local Tab1 = Window:MakeTab({"R6 and r15⬜", "R6 and r15⬜"})
 
 Tab1:AddButton({"hacker FE", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Legenda06/Client-Replication/main/Fe"))()
@@ -1191,7 +1191,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FOGOTY/foggy-loader/r
 print("Hello World!")
 end})
 
-local Tab1 = Window:MakeTab({"dead rails", "dead rails"})
+local Tab1 = Window:MakeTab({"dead rails🧟‍♂️🚂", "dead rails🧟‍♂️🚂"})
 
 Tab1:AddButton({"nathub", function(Value) loadstring(game:HttpGet("https://raw.githubusercontent.com/ArdyBotzz/NatHub/refs/heads/master/NatHub.lua"))()
 print("Hello World!")
