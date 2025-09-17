@@ -693,6 +693,11 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/TheDarkoneMarcilliseP
 print("Hello World!")
 end}) 
 
+Tab1:AddButton({" raygull", function(Value)
+https://raw.githubusercontent.com/raygull3d/99-Nights-in-the-Forest-Script/refs/heads/main/99%20Days%20Scirpt%20By%20Raygull.lua
+print("Hello World!")
+end})
+
 local Tab1 = Window:MakeTab({"doors🚪👁", "doors🚪👁"})
 
 Tab1:AddButton({"KITTY CATS DOORS", function(Value)
