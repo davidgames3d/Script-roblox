@@ -117,3 +117,52 @@ end})
 
 local Tab1 = Window:MakeTab({"spawnar mash", "spawnar mash"})
 
+-- Variável de controle
+local running = false
+local dued -- Vamos criar fora do loop
+
+-- Toggle
+local Toggle1 = Tab1:AddToggle({
+    Name = "Toggle",
+    Description = "This is a <font color='rgb(88, 101, 242)'>Toggle</font> Example",
+    Default = false
+})
+
+Toggle1:Callback(function(Value)
+    running = Value
+
+    -- Cria o part se ainda não existir
+    if running and not dued then
+        dued = Instance.new("Part", workspace)
+        local mesh = Instance.new("SpecialMesh", dued)
+        mesh.MeshType = Enum.MeshType.FileMesh
+        mesh.MeshId = "rbxassetid://8905201196"
+        mesh.TextureId = "rbxassetid://8905201311"
+
+        dued.Size = Vector3.new(1, 1, 1)
+        dued.Anchored = false
+        dued.Position = Vector3.new(0,5,0) -- posição inicial
+    end
+end)
+
+-- Loop principal
+spawn(function()
+    while true do
+        if running and dued then
+            -- Movimento aleatório
+            local dx = math.random(-5,5)/10
+            local dy = math.random(1,5)/5
+            local dz = math.random(-5,5)/10
+            dued.Position = dued.Position + Vector3.new(dx, dy, dz)
+
+            -- Gira o part aleatoriamente
+            dued.CFrame = dued.CFrame * CFrame.Angles(
+                math.rad(math.random(-90,30)),
+                math.rad(math.random(-90,30)),
+                math.rad(math.random(-90,30))
+            )
+        end
+        wait(0.1)
+    end
+end)
+
