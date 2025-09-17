@@ -69,6 +69,10 @@ Tab1:AddSlider({
     end
 })
 
+Tab1:AddButton({"parte 2 do hub", function(Value)
+print("Hello World!")
+end})
+
 local Tab1 = Window:MakeTab({"universal🌏", "universal🌏"})
 
 Tab1:AddButton({"c00lkidd", function(Value)
