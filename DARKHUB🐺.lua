@@ -542,6 +542,21 @@ end)
 print("Hello World!")
 end})
 
+Tab1:AddButton({"funny hub", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Forsaken-Funny-Hub-V2-42056"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"rift forsaken", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Slasher-Forsaken-gi-51733"))()
+print("Hello World!")
+end}) 
+
+Tab1:AddButton({"atherhub forsaken", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Slasher-Forsaken-Atherhub-Forsaken-OVERPOWERED-AUTO-GENERATOR-AND-SPEED-51096"))()
+print("Hello World!")
+end})
+
 local Tab1 = Window:MakeTab({"roube um brainrot🧠🪐", "roube um brainrot🧠🪐"})
 
 Tab1:AddButton({"steal a brainrot script", function(Value)
