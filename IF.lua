@@ -65,7 +65,7 @@ local function spawnLegoshi(speed)
 	legoshi.TextureID = "rbxassetid://"..textureId
 	legoshi.Size = Vector3.new(6, 12, 6)
 	legoshi.Anchored = false
-	legoshi.CanCollide = true
+	legoshi.CanCollide = false
 	legoshi.Name = "LegoshiChaser"
 	legoshi.Parent = Workspace
 	legoshi.CFrame = character.HumanoidRootPart.CFrame * CFrame.new(0, legoshi.Size.Y/2, -20)
@@ -99,7 +99,7 @@ screenGui.Name = "FurryApocalypseGui"
 local mainButton = Instance.new("TextButton", screenGui)
 mainButton.Size = UDim2.new(0,200,0,50)
 mainButton.Position = UDim2.new(0.5,-100,0.9,-50)
-mainButton.Text = "🔴abrir/fechar"
+mainButton.Text = "🔴 INICIAR INVASÃO"
 mainButton.TextColor3 = Color3.new(1,1,1)
 mainButton.BackgroundColor3 = Color3.new(0.8,0,0)
 
@@ -124,8 +124,8 @@ end
 createButton("🌌 Ativar Skybox", 10, chaosSkybox)
 createButton("🖼 Spam de Texturas", 60, chaosTextures)
 createButton("📢 Tocar Sirene", 110, playChaosAudio)
-createButton("🐺 Spawnar furries", 160, function() spawnLegoshi(0.8) end)
-createButton("☠ apocalipse", 210, hardcoreMode)
+createButton("🐺 Spawnar Legoshi", 160, function() spawnLegoshi(0.8) end)
+createButton("☠ Modo HARDCORE", 210, hardcoreMode)
 
 -- Abrir/fechar painel
 mainButton.MouseButton1Click:Connect(function()
