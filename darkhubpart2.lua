@@ -111,7 +111,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-r
 print("Hello World!")
 end}) 
 
-Tab1:AddButton({"painel apocalipse furry", function(Value)
+Tab1:AddButton({"invasão furry", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/IF.lua"))()
 print("Hello World!")
 end})
