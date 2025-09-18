@@ -115,3 +115,8 @@ Tab1:AddButton({"invasão furry", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/IF.lua"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"spawnar modelo 3d", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/spawnar.lua"))()
+print("Hello World!")
+end})
