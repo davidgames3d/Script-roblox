@@ -110,3 +110,8 @@ Tab1:AddButton({"conquista fake doors", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/conquista%20falsa%20doors.lua"))()
 print("Hello World!")
 end}) 
+
+Tab1:AddButton({"painel apocalipse furry", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/IF.lua"))()
+print("Hello World!")
+end})
