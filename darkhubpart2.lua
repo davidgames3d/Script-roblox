@@ -110,13 +110,3 @@ Tab1:AddButton({"conquista fake doors", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/conquista%20falsa%20doors.lua"))()
 print("Hello World!")
 end}) 
-
-Tab1:AddButton({CONTROL NPC FE", function(Value)
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Control-script-Credits-to-patrick-34156"))()
-print("Hello World!")
-end})
-
-Tab1:AddButton({"shaders RTX", function(Value)
-loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-pshade-ultimate-25505"))()
-print("Hello World!")
-end})
