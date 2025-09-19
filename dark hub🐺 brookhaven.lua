@@ -284,3 +284,71 @@ end)
 Players.PlayerRemoving:Connect(function()
     Dropdown:SetOptions(GetPlayersList())
 end)
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local RunService = game:GetService("RunService")
+
+local SelectedPlayer = nil
+
+-- função para listar jogadores
+local function GetPlayersList()
+    local names = {}
+    for _, plr in ipairs(Players:GetPlayers()) do
+        table.insert(names, plr.Name)
+    end
+    return names
+end
+
+-- Dropdown com os jogadores
+local Dropdown = Tab1:AddDropdown({
+    Name = "Players List",
+    Description = "Select a <font color='rgb(255, 50, 50)'>Player</font>",
+    Options = GetPlayersList(),
+    Default = LocalPlayer.Name,
+    Flag = "dropdown_fling",
+    Callback = function(Value)
+        SelectedPlayer = Players:FindFirstChild(Value)
+    end
+})
+
+-- Botão para spawnar a bolinha troll
+Tab1:AddButton({"Spawn Troll Ball", function()
+    if SelectedPlayer and SelectedPlayer.Character then
+        local hrp = SelectedPlayer.Character:FindFirstChild("HumanoidRootPart")
+        if hrp then
+            -- cria a bolinha
+            local ball = Instance.new("Part")
+            ball.Shape = Enum.PartType.Ball
+            ball.Size = Vector3.new(5,5,5)
+            ball.Position = hrp.Position + Vector3.new(0, 5, 0)
+            ball.Anchored = false
+            ball.CanCollide = true
+            ball.Color = Color3.fromRGB(255,0,0)
+            ball.Parent = workspace
+
+            -- força que faz a bola seguir o player
+            local bp = Instance.new("BodyPosition")
+            bp.MaxForce = Vector3.new(1e9, 1e9, 1e9)
+            bp.P = 1e9
+            bp.D = 0
+            bp.Position = hrp.Position
+            bp.Parent = ball
+
+            -- loop pra bola perseguir o jogador
+            RunService.Heartbeat:Connect(function()
+                if hrp and bp.Parent and ball.Parent then
+                    bp.Position = hrp.Position
+                end
+            end)
+        end
+    end
+end})
+
+-- atualiza a lista se players entrarem/sair
+Players.PlayerAdded:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
+Players.PlayerRemoving:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
