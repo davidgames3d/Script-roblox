@@ -555,3 +555,89 @@ Tab1:AddButton({"Sofa Blink", function()
         end
     end)
 end})
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+local SelectedPlayer = nil
+
+-- Função pra atualizar lista de jogadores
+local function GetPlayersList()
+    local t = {}
+    for _, p in ipairs(Players:GetPlayers()) do
+        table.insert(t, p.Name)
+    end
+    return t
+end
+
+-- Dropdown de players
+local Dropdown = Tab1:AddDropdown({
+    Name = "Choose Player",
+    Description = "Select a player to copy skin",
+    Options = GetPlayersList(),
+    Default = LocalPlayer.Name,
+    Flag = "skin_copy_dropdown",
+    Callback = function(Value)
+        SelectedPlayer = Players:FindFirstChild(Value)
+    end
+})
+
+Players.PlayerAdded:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
+Players.PlayerRemoving:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
+
+-- Função pra copiar skin
+local function CopySkin(targetPlayer)
+    if not targetPlayer or not targetPlayer.Character then return end
+    local targetChar = targetPlayer.Character
+    local myChar = LocalPlayer.Character
+    if not myChar then return end
+
+    -- Copiar BodyColors (cor da pele, olhos, cabelo)
+    local targetColors = targetChar:FindFirstChild("Body Colors") or targetChar:FindFirstChild("BodyColors")
+    if targetColors then
+        local myColors = myChar:FindFirstChild("Body Colors") or Instance.new("BodyColors", myChar)
+        for _, prop in ipairs({"HeadColor", "TorsoColor", "LeftArmColor", "RightArmColor", "LeftLegColor", "RightLegColor"}) do
+            if targetColors[prop] then
+                myColors[prop] = targetColors[prop]
+            end
+        end
+    end
+
+    -- Copiar Shirt
+    local targetShirt = targetChar:FindFirstChildOfClass("Shirt")
+    if targetShirt then
+        local myShirt = myChar:FindFirstChildOfClass("Shirt") or Instance.new("Shirt", myChar)
+        myShirt.ShirtTemplate = targetShirt.ShirtTemplate
+    end
+
+    -- Copiar Pants
+    local targetPants = targetChar:FindFirstChildOfClass("Pants")
+    if targetPants then
+        local myPants = myChar:FindFirstChildOfClass("Pants") or Instance.new("Pants", myChar)
+        myPants.PantsTemplate = targetPants.PantsTemplate
+    end
+
+    -- Copiar Accessories
+    for _, acc in ipairs(myChar:GetChildren()) do
+        if acc:IsA("Accessory") then
+            acc:Destroy()
+        end
+    end
+    for _, acc in ipairs(targetChar:GetChildren()) do
+        if acc:IsA("Accessory") then
+            local newAcc = acc:Clone()
+            newAcc.Parent = myChar
+        end
+    end
+end
+
+-- Botão do hub
+Tab1:AddButton({"Copy Skin", function()
+    if SelectedPlayer then
+        CopySkin(SelectedPlayer)
+    end
+end})
