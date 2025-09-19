@@ -31,6 +31,11 @@ Tab1:AddButton({"ir para parte 3", function(Value)
 print("Hello World!")
 end})
 
+Tab1:AddButton({"ir para a versão de brookhaven 🏡", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/dark%20hub%F0%9F%90%BA%20brookhaven.lua"))()
+print("Hello World!")
+end})
+
 local Tab1 = Window:MakeTab({"AUTO FARM,AIMBOT,SPY", "AUTO FARM,AIMBOT,SPY"})
 
 Tab1:AddButton({"OP Infinite Stamina Auto Hunt Players Auto Farm", function(Value)
