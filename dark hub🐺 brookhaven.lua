@@ -462,3 +462,96 @@ Tab1:AddButton({"Spawn Troll Ball", function()
         bp.Position = hrp.Position
     end)
 end})
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
+
+local SelectedPlayer = nil
+local OriginalPosition = nil
+local Teleporting = false
+
+-- Função para equipar o sofá
+local function equipCouch()
+    local backpack = LocalPlayer:FindFirstChildOfClass("Backpack")
+    if not backpack then return nil end
+
+    local couchItem = backpack:FindFirstChild("Couch")
+    if couchItem then
+        couchItem.Parent = LocalPlayer.Character
+        local humanoid = LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+        if humanoid then
+            humanoid:EquipTool(couchItem)
+            return couchItem
+        end
+    end
+    return nil
+end
+
+-- Dropdown de jogadores
+local function GetPlayersList()
+    local t = {}
+    for _, p in ipairs(Players:GetPlayers()) do
+        table.insert(t, p.Name)
+    end
+    return t
+end
+
+local Dropdown = Tab1:AddDropdown({
+    Name = "Players List",
+    Description = "Escolha o alvo",
+    Options = GetPlayersList(),
+    Default = LocalPlayer.Name,
+    Flag = "dropdown_sofablink",
+    Callback = function(Value)
+        SelectedPlayer = Players:FindFirstChild(Value)
+    end
+})
+
+Players.PlayerAdded:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
+Players.PlayerRemoving:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
+
+-- Botão do sofá-blink
+Tab1:AddButton({"Sofa Blink", function()
+    if not SelectedPlayer or not SelectedPlayer.Character then return end
+    local hrpTarget = SelectedPlayer.Character:FindFirstChild("HumanoidRootPart")
+    local humanoidTarget = SelectedPlayer.Character:FindFirstChildOfClass("Humanoid")
+    if not hrpTarget or not humanoidTarget then return end
+
+    local couch = equipCouch()
+    if not couch then return end
+
+    -- Salva posição original
+    OriginalPosition = LocalPlayer.Character.HumanoidRootPart.CFrame
+
+    Teleporting = true
+    local conn
+    conn = RunService.Heartbeat:Connect(function()
+        if not Teleporting then
+            conn:Disconnect()
+            return
+        end
+
+        local hrpPlayer = LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+        if hrpPlayer then
+            -- Teleporta você + sofá pra perto do alvo
+            local targetPos = hrpTarget.Position + Vector3.new(0,0,2) -- fica a 2 studs de distância
+            hrpPlayer.CFrame = CFrame.new(targetPos)
+            couch.CFrame = hrpPlayer.CFrame * CFrame.new(0, -3, 0) -- sofá no chão perto dos pés
+
+            -- Faz o player alvo sentar se próximo do sofá
+            local dist = (couch.Position - hrpTarget.Position).Magnitude
+            if dist <= 4 then
+                humanoidTarget.Sit = true
+                -- Assim que sentar, teleportamos de volta
+                Teleporting = false
+                hrpPlayer.CFrame = OriginalPosition
+                couch.CFrame = OriginalPosition * CFrame.new(0, -3, 0)
+            end
+        end
+    end)
+end})
