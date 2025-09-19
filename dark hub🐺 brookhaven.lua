@@ -641,3 +641,38 @@ Tab1:AddButton({"Copy Skin", function()
         CopySkin(SelectedPlayer)
     end
 end})
+
+local RunService = game:GetService("RunService")
+local LocalPlayer = game:GetService("Players").LocalPlayer
+
+local RGBToggle = false
+local RGBSpeed = 0.1 -- tempo entre atualizações (segundos)
+
+Tab1:AddToggle({
+    Name = "RGB Mode",
+    Default = false,
+    Callback = function(v)
+        RGBToggle = v
+    end
+})
+
+local function RandomColor()
+    return Color3.fromRGB(math.random(0,255), math.random(0,255), math.random(0,255))
+end
+
+-- Loop contínuo pra atualizar cores
+spawn(function()
+    while true do
+        wait(RGBSpeed)
+        if RGBToggle and LocalPlayer.Character then
+            local bodyColors = LocalPlayer.Character:FindFirstChild("Body Colors") 
+                               or Instance.new("BodyColors", LocalPlayer.Character)
+            bodyColors.HeadColor = RandomColor()
+            bodyColors.TorsoColor = RandomColor()
+            bodyColors.LeftArmColor = RandomColor()
+            bodyColors.RightArmColor = RandomColor()
+            bodyColors.LeftLegColor = RandomColor()
+            bodyColors.RightLegColor = RandomColor()
+        end
+    end
+end)
