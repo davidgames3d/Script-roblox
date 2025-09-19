@@ -681,3 +681,8 @@ Tab1:AddButton({"c00lkidd hub a Key é C00LKIDDMAN666", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/c00lkiddHUB.lua"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"SHNMAX", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-SHNMAX-UPDATE-FIX-NO-KEYLESS-48289"))()
+print("Hello World!")
+end})
