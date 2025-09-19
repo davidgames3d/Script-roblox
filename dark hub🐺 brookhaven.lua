@@ -352,3 +352,113 @@ end)
 Players.PlayerRemoving:Connect(function()
     Dropdown:SetOptions(GetPlayersList())
 end)
+
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local LocalPlayer = Players.LocalPlayer
+local GuiService = LocalPlayer:WaitForChild("PlayerGui")
+
+local SelectedPlayer = nil
+
+-- Função pra mostrar mensagem na tela
+local function ShowMessage(text)
+    local msg = Instance.new("TextLabel")
+    msg.Size = UDim2.new(0.5,0,0.1,0)
+    msg.Position = UDim2.new(0.25,0,0.9,0)
+    msg.BackgroundTransparency = 0.5
+    msg.TextScaled = true
+    msg.Text = text
+    msg.Parent = GuiService
+
+    game:GetService("Debris"):AddItem(msg, 3)
+end
+
+-- Função pra achar a bola de um jogador
+local function FindPlayerBall(player)
+    if not player.Character then return nil end
+    local char = player.Character
+
+    -- 1) Bola jogada / no mundo
+    for _, obj in ipairs(workspace:GetDescendants()) do
+        if obj.Name == "SoccerBall" and obj:IsA("Part") then
+            return obj
+        end
+    end
+
+    -- 2) Bola na mão do player (equipada)
+    for _, item in ipairs(char:GetDescendants()) do
+        if item.Name == "SoccerBall" and item:IsA("Part") then
+            return item
+        end
+    end
+
+    -- 3) Bola no inventário do LocalPlayer (aqui você precisaria de acesso ao inventário real do jogo)
+    -- placeholder: se não achar nada, retorna nil
+    return nil
+end
+
+-- Dropdown de jogadores
+local function GetPlayersList()
+    local t = {}
+    for _, p in ipairs(Players:GetPlayers()) do
+        table.insert(t, p.Name)
+    end
+    return t
+end
+
+local Dropdown = Tab1:AddDropdown({
+    Name = "Players List",
+    Description = "Escolha a vítima",
+    Options = GetPlayersList(),
+    Default = LocalPlayer.Name,
+    Flag = "dropdown_fling",
+    Callback = function(Value)
+        SelectedPlayer = Players:FindFirstChild(Value)
+    end
+})
+
+Players.PlayerAdded:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
+Players.PlayerRemoving:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
+
+-- Botão para ativar o caos físico
+Tab1:AddButton({"Spawn Troll Ball", function()
+    if not SelectedPlayer then
+        ShowMessage("Selecione um player primeiro!")
+        return
+    end
+
+    local ball = FindPlayerBall(SelectedPlayer)
+
+    if not ball then
+        ShowMessage("Não há bola disponível para esse player!")
+        return
+    end
+
+    local hrp = SelectedPlayer.Character:FindFirstChild("HumanoidRootPart")
+    if not hrp then
+        ShowMessage("Player não tem personagem ativo!")
+        return
+    end
+
+    -- aplica BodyPosition pra colar no jogador
+    local bp = Instance.new("BodyPosition")
+    bp.MaxForce = Vector3.new(1e9,1e9,1e9)
+    bp.P = 1e6
+    bp.D = 0
+    bp.Position = hrp.Position
+    bp.Parent = ball
+
+    -- loop pra atualizar posição
+    local conn
+    conn = RunService.Heartbeat:Connect(function()
+        if not hrp or not ball.Parent then
+            conn:Disconnect()
+            return
+        end
+        bp.Position = hrp.Position
+    end)
+end})
