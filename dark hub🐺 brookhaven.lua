@@ -112,3 +112,175 @@ Tab1:AddButton({"Cartola Hub🎩", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Davi999z/Cartola-Hub/refs/heads/main/Brookhaven",true))() 
 print("Hello World!")
 end})
+
+local Tab1 = Window:MakeTab({"trollagem🤣", "trollface"})
+
+-- Variável pra guardar o Sky
+local sky
+
+-- Caixa de texto pra colocar o ID
+local skyboxID
+Tab1:AddTextBox({
+    Name = "ID da Sky Box",
+    Description = "Digite o ID da T-Shirt ou outro Skybox",
+    PlaceholderText = "rbxassetid aqui",
+    Callback = function(Value)
+        skyboxID = Value -- salva o valor digitado
+    end
+})
+
+-- Toggle pra ativar/desativar o Sky Box
+local Toggle1 = Tab1:AddToggle({
+    Name = "Ativar Sky Box",
+    Description = "Ativa ou desativa o Sky Box usando o ID da caixa de texto ou a T-Shirt do player",
+    Default = false
+})
+
+Toggle1:Callback(function(Value)
+    if Value then
+        local idToUse = skyboxID -- primeiro tenta usar o ID digitado
+        -- se a caixa estiver vazia, tenta pegar a T-Shirt do player
+        if not idToUse or idToUse == "" then
+            local shirt = player.Character and player.Character:FindFirstChildOfClass("Shirt")
+            if shirt then
+                idToUse = shirt.ShirtTemplate:match("%d+")
+            end
+        end
+
+        if idToUse and idToUse ~= "" then
+            if sky then sky:Destroy() end
+            sky = Instance.new("Sky")
+            sky.Name = "SkyBoxCustom"
+            for _,prop in ipairs({"SkyboxBk","SkyboxDn","SkyboxFt","SkyboxLf","SkyboxRt","SkyboxUp"}) do
+                sky[prop] = "rbxassetid://"..idToUse
+            end
+            sky.Parent = game.Lighting
+            criarNotificacao("Sky Box", "Sky Box ativado com o ID: "..idToUse, 3)
+        else
+            criarNotificacao("Erro", "Não foi possível pegar nenhum ID válido!", 3)
+        end
+    else
+        -- Desativar Sky Box
+        if sky then
+            sky:Destroy()
+            sky = nil
+            criarNotificacao("Sky Box", "Sky Box removido!", 3)
+        end
+    end
+end)
+
+local Tab1 = Window:MakeTab({"PLAYERS", "eye"})
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local Camera = workspace.CurrentCamera
+
+-- pega todos os jogadores
+local function GetPlayersList()
+    local names = {}
+    for _, plr in ipairs(Players:GetPlayers()) do
+        table.insert(names, plr.Name)
+    end
+    return names
+end
+
+local SelectedPlayer = nil
+local Spectating = false
+
+-- Dropdown com os jogadores
+local Dropdown = Tab1:AddDropdown({
+    Name = "Players List",
+    Description = "Select the <font color='rgb(88, 101, 242)'>Player</font>",
+    Options = GetPlayersList(),
+    Default = LocalPlayer.Name,
+    Flag = "dropdown teste",
+    Callback = function(Value)
+        SelectedPlayer = Players:FindFirstChild(Value)
+    end
+})
+
+-- Toggle para spectar
+Tab1:AddToggle({
+    Name = "Spectate Player",
+    Default = false,
+    Callback = function(v)
+        Spectating = v
+        if not v then
+            -- volta pro player local
+            Camera.CameraSubject = LocalPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+        elseif SelectedPlayer and SelectedPlayer.Character then
+            -- segue o player selecionado
+            local hum = SelectedPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+            if hum then
+                Camera.CameraSubject = hum
+            end
+        end
+    end
+})
+
+-- atualiza dropdown quando jogadores entram ou saem
+Players.PlayerAdded:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
+Players.PlayerRemoving:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
+
+-- se o jogador selecionado morrer/respawnar e ainda estiver spectando, a câmera continua nele
+game:GetService("RunService").RenderStepped:Connect(function()
+    if Spectating and SelectedPlayer and SelectedPlayer.Character then
+        local hum = SelectedPlayer.Character:FindFirstChildWhichIsA("Humanoid")
+        if hum and Camera.CameraSubject ~= hum then
+            Camera.CameraSubject = hum
+        end
+    end
+end)
+
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+
+-- pega todos os jogadores
+local function GetPlayersList()
+    local names = {}
+    for _, plr in ipairs(Players:GetPlayers()) do
+        table.insert(names, plr.Name)
+    end
+    return names
+end
+
+local SelectedPlayer = nil
+
+-- Dropdown com os jogadores
+local Dropdown = Tab1:AddDropdown({
+    Name = "Players List",
+    Description = "Select the <font color='rgb(88, 101, 242)'>Player</font>",
+    Options = GetPlayersList(),
+    Default = LocalPlayer.Name,
+    Flag = "dropdown teste",
+    Callback = function(Value)
+        SelectedPlayer = Players:FindFirstChild(Value)
+    end
+})
+
+-- Botão para teleportar
+Tab1:AddButton({"Teleport to Player", function()
+    if SelectedPlayer and SelectedPlayer.Character then
+        local myChar = LocalPlayer.Character
+        local targetChar = SelectedPlayer.Character
+        local targetHRP = targetChar:FindFirstChild("HumanoidRootPart")
+        local myHRP = myChar and myChar:FindFirstChild("HumanoidRootPart")
+
+        if targetHRP and myHRP then
+            -- teleporta direto no jogador (3 studs acima pra não bugar dentro dele)
+            myHRP.CFrame = targetHRP.CFrame * CFrame.new(0, 3, 0)
+        end
+    end
+end})
+
+-- Atualiza lista de jogadores quando entra/sai alguém
+Players.PlayerAdded:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
+Players.PlayerRemoving:Connect(function()
+    Dropdown:SetOptions(GetPlayersList())
+end)
