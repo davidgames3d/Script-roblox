@@ -676,3 +676,8 @@ spawn(function()
         end
     end
 end)
+
+Tab1:AddButton({"c00lkidd hub a Key é C00LKIDDMAN666", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/c00lkiddHUB.lua"))()
+print("Hello World!")
+end})
