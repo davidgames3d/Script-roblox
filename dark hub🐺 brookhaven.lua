@@ -4,7 +4,7 @@ local Window = redzlib:MakeWindow({
   SubTitle = "by davidgames3d",
   SaveFolder = "testando | redz lib v5.lua"
 })
-local Tab1 = Window:MakeTab({"main🏡", "house"})
+local Tab1 = Window:MakeTab({"main🏡", "main"})
 
 Window:AddMinimizeButton({
     Button = { Image = "rbxassetid://9265687294", BackgroundTransparency = 0 },
@@ -41,7 +41,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-r
 print("Hello World!")
 end})
 
-local Tab1 = Window:MakeTab({"scripts", "scripts"})
+local Tab1 = Window:MakeTab({"scripts", "utility"})
 
 Tab1:AddButton({"zynora hub", function(Value)
 loadstring(game:HttpGet("https://pastebin.com/raw/PwyJLxeJ"))()
@@ -684,5 +684,10 @@ end})
 
 Tab1:AddButton({"SHNMAX", function(Value)
 loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-SHNMAX-UPDATE-FIX-NO-KEYLESS-48289"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"fling all", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
 print("Hello World!")
 end})
