@@ -695,7 +695,7 @@ end})
 local Tab1 = Window:MakeTab({"ferramentas🛠", " Tools"})
 
 Tab1:AddButton({"FREECAM mobile", function(Value)
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/FCMOBILE.lua"))()
 print("Hello World!")
 end})
 
