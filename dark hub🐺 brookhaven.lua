@@ -691,3 +691,10 @@ Tab1:AddButton({"fling all", function(Value)
 loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
 print("Hello World!")
 end})
+
+local Tab1 = Window:MakeTab({"ferramentas🛠", " Tools"})
+
+Tab1:AddButton({"FreeCam", function(Value)
+loadstring(game:HttpGet("https://s3.rscripts.net/scripts/virtual-reality-spoofer_640b734c4ec71.txt", true))()
+print("Hello World!")
+end})
