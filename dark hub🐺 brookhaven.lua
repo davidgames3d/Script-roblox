@@ -700,7 +700,7 @@ print("Hello World!")
 end})
 
 Tab1:AddButton({"FREECAM pc", function(Value)
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/FCPC.lua"))()
 print("Hello World!")
 end})
 
