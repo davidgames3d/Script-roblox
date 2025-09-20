@@ -694,8 +694,13 @@ end})
 
 local Tab1 = Window:MakeTab({"ferramentas🛠", " Tools"})
 
-Tab1:AddButton({"FreeCam", function(Value)
-loadstring(game:HttpGet("https://s3.rscripts.net/scripts/virtual-reality-spoofer_640b734c4ec71.txt", true))()
+Tab1:AddButton({"FREECAM mobile", function(Value)
+
+print("Hello World!")
+end})
+
+Tab1:AddButton({"FREECAM pc", function(Value)
+
 print("Hello World!")
 end})
 
