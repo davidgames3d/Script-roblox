@@ -706,6 +706,11 @@ end})
 
 local Tab1 = Window:MakeTab({"ANIMAÇÕES🎥", "main"})
 
+Tab1:AddButton({"teleporte para as backrooms 🟨", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/Backrooms.lua"))()
+print("Hello World!")
+end})
+
 Tab1:AddButton({"expansão de domínio 🔴🔵", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/expans%C3%A3o%20de%20dom%C3%ADnio.lua"))()
 print("Hello World!")
