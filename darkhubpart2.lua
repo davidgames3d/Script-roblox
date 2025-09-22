@@ -159,7 +159,9 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Kick-gui-by
 print("Hello World!")
 end})
 
-Tab1:AddButton({"Print", function(Value)
-
+Tab1:AddButton({"TROLL HUB ALL", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KATERGaming/Roblox/main/KaterHub.Lua"))()
 print("Hello World!")
 end})
+
+
