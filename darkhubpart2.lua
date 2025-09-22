@@ -144,7 +144,12 @@ loadstring(game:HttpGet(("https://paste.website/p/5dcfcf3e-5195-4503-9496-72d068
 print("Hello World!")
 end})
 
-Tab1:AddButton({"Print", function(Value)
+Tab1:AddButton({"brookhaven áudio all", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/nmalka01/nmalka01/refs/heads/main/Brookhaven_audio"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"fe Crash/lag", function(Value)
 
 print("Hello World!")
 end})
