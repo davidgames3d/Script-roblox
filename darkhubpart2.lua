@@ -130,3 +130,10 @@ Tab1:AddButton({"FE LAG GUI", function(Value)
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-LAG-GUI-WITH-NICE-DESIGN-39504"))()
 print("Hello World!")
 end})
+
+local Tab1 = Window:MakeTab({"VIP⭐", "star"})
+
+Tab1:AddButton({"VERSÃO VIP", function(Value)
+
+print("Hello World!")
+end})
