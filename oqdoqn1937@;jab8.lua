@@ -52,8 +52,9 @@ button.MouseButton1Click:Connect(function()
     if checkKey(inputKey) then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/DARK%20HUB%20VIP%E2%AD%90%20version.lua"))()
         print("Key aceita! Rodando Dark HUB VIP⭐")
-        screenGui:Destroy() -- Fecha a GUI depois de aceitar
-    else
+       
+ screenGui.Parent = nil  -- Remove da tela
+screenGui:Destroy()     -- Destroi completamente
         warn("Key inválida! Você não tem acesso à versão VIP.")
         textBox.Text = "" -- Limpa o TextBox
     end
