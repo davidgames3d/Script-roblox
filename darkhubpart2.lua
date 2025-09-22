@@ -131,9 +131,10 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FE-LAG-GUI-
 print("Hello World!")
 end})
 
-local Tab1 = Window:MakeTab({"VIP⭐", "star"})
+local Tab1 = Window:MakeTab({"all", "people"})
 
-Tab1:AddButton({"VERSÃO VIP", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/oqdoqn1937%40%3Bjab8.lua"))()
+Tab1:AddButton({"Print", function(Value)
+
 print("Hello World!")
 end})
+
