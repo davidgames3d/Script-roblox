@@ -15,8 +15,9 @@ Window:AddMinimizeButton({
     Invite = "https://discord.gg/qXkvYQYKZG",
 })
 
-local Tab1 = Window:MakeTab({"main", "house"})
+local Tab1 = Window:MakeTab({"main", "main"})
 
-Tab1:AddButton({"Versão normal", function(Value) 
+Tab1:AddButton({"versão original", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/DARKHUB🐺.lua"))()
+print("Hello World!")
 end})
