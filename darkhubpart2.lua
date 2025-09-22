@@ -134,6 +134,6 @@ end})
 local Tab1 = Window:MakeTab({"VIP⭐", "star"})
 
 Tab1:AddButton({"VERSÃO VIP", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/DARK%20HUB%20VIP%E2%AD%90%20version.lua"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/oqdoqn1937%40%3Bjab8.lua"))()
 print("Hello World!")
 end})
