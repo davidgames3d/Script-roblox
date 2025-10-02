@@ -200,3 +200,8 @@ Tab1:AddButton({"Cartola HUB", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Davi999z/Cartola-Hub/refs/heads/main/Brookhaven",true))() 
 print("Hello World!")
 end})
+
+Tab1:AddButton({"C00Lgui v2", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AvaliOrgal/c00lgui/2ce5cd1af7ccf4da524abb2ca0b49026e7d2c7b6/c00l%20gui"))()
+print("Hello World!")
+end})
