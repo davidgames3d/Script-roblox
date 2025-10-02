@@ -230,3 +230,8 @@ Tab1:AddButton({"fe fling all", function(Value)
 loadstring(game:HttpGet("https://pastebin.pl/view/raw/48f9f8ee"))() 
 print("Hello World!")
 end})
+
+Tab1:AddButton({"Ghost Hub", function(Value)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
+print("Hello World!")
+end})
