@@ -190,3 +190,8 @@ Tab1:AddButton({"infinite yield", function(Value)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"DEX Explorer", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/DEX-Explorer/refs/heads/main/Mobile.lua"))()
+print("Hello World!")
+end})
