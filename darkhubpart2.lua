@@ -180,3 +180,8 @@ Tab1:AddButton({"1X1X1X1 GUI MODDED", function(Value)
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-1X1X1X1-GUI-MODDED-changed-the-names-and-messages-10246", true))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"c00lkid revival", function(Value)
+loadstring(game:HttpGet("https://gist.githubusercontent.com/jointeamck/28a342b097091c2f0fac3f7ad03ff631/raw/b356a7e0cd1a9327098e73b6975977964106d78e/c00lgui%20v2.3%20deluxe", true))()
+print("Hello World!")
+end})
