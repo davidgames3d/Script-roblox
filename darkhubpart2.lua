@@ -168,3 +168,10 @@ Tab1:AddButton({"FE FLING ALL", function(Value)
 loadstring(game:HttpGet("https://pastebin.com/raw/zqyDSUWX"))()
 print("Hello World!")
 end})
+
+local Tab1 = Window:MakeTab({"hackers famosos", "hackers famosos"})
+
+Tab1:AddButton({"Tuber93 gui", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/tuber93%20gui.lua"))()
+print("Hello World!")
+end})
