@@ -215,3 +215,8 @@ Tab1:AddButton({"gui 8x8x8x8", function(Value)
 loadstring(game:HttpGet("https://pastebin.com/raw/KvtmH8BX"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"f3x btool", function(Value)
+loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+print("Hello World!")
+end})
