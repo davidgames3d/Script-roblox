@@ -175,3 +175,8 @@ Tab1:AddButton({"Tuber93 gui", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/tuber93%20gui.lua"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"1X1X1X1 GUI MODDED", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-1X1X1X1-GUI-MODDED-changed-the-names-and-messages-10246", true))()
+print("Hello World!")
+end})
