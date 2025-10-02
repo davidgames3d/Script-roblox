@@ -225,3 +225,8 @@ Tab1:AddButton({"FlyGuiV3", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"fe fling all", function(Value)
+loadstring(game:HttpGet("https://pastebin.pl/view/raw/48f9f8ee"))() 
+print("Hello World!")
+end})
