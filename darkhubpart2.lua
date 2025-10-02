@@ -195,3 +195,8 @@ Tab1:AddButton({"DEX Explorer", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/realredz/DEX-Explorer/refs/heads/main/Mobile.lua"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"Cartola HUB", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Davi999z/Cartola-Hub/refs/heads/main/Brookhaven",true))() 
+print("Hello World!")
+end})
