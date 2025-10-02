@@ -210,3 +210,8 @@ Tab1:AddButton({"guest 666", function(Value)
 loadstring(game:HttpGet("https://rawscripts.net/raw/Medieval-Clash!-Perfected-Guest666-script-11367"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"gui 8x8x8x8", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/KvtmH8BX"))()
+print("Hello World!")
+end})
