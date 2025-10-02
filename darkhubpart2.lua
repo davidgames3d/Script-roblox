@@ -220,3 +220,8 @@ Tab1:AddButton({"f3x btool", function(Value)
 loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"FlyGuiV3", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/XNEOFF/FlyGuiV3/main/FlyGuiV3.txt"))()
+print("Hello World!")
+end})
