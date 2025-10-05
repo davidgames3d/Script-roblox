@@ -247,3 +247,8 @@ Tab1:AddButton({"Ez Hub", function(Value)
 loadstring(game:HttpGet("https://pastebin.com/raw/VMBwfh0J"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"SasWares", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/centerepic/sasware_TowerOfHell/main/TowerOfHell_sw.lua"))()
+print("Hello World!")
+end})
