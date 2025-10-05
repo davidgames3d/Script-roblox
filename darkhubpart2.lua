@@ -252,3 +252,8 @@ Tab1:AddButton({"SasWares", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/centerepic/sasware_TowerOfHell/main/TowerOfHell_sw.lua"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"SprinHub", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/dqvh/dqvh/main/SprinHub",true))()
+print("Hello World!")
+end})
