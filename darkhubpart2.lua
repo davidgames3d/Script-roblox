@@ -257,3 +257,8 @@ Tab1:AddButton({"SprinHub", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/dqvh/dqvh/main/SprinHub",true))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"P1ne Loader", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/p1neru/tutor/main/p1ne-injector"))()
+print("Hello World!")
+end})
