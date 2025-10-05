@@ -235,3 +235,10 @@ Tab1:AddButton({"Ghost Hub", function(Value)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
 print("Hello World!")
 end})
+
+local Tab1 = Window:MakeTab({"Tower OF Hell", "Tower OF Hell"})
+
+Tab1:AddButton({"2025 script hol", function(Value)
+loadstring(game:HttpGet("https://coolxplo.github.io/DP-HUB-coolxplo/Tower%20Of%20Hell.lua", true))()
+print("Hello World!")
+end})
