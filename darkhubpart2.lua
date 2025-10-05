@@ -262,3 +262,8 @@ Tab1:AddButton({"P1ne Loader", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/p1neru/tutor/main/p1ne-injector"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"Farm Tiger admin gui", function(Value)
+loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/MAIN'))() 
+print("Hello World!")
+end})
