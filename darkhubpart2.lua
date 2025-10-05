@@ -242,3 +242,8 @@ Tab1:AddButton({"2025 script hol", function(Value)
 loadstring(game:HttpGet("https://coolxplo.github.io/DP-HUB-coolxplo/Tower%20Of%20Hell.lua", true))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"Ez Hub", function(Value)
+loadstring(game:HttpGet("https://pastebin.com/raw/VMBwfh0J"))()
+print("Hello World!")
+end})
