@@ -27,7 +27,7 @@ print("Hello World!")
 end})
 
 Tab1:AddButton({"ir para parte 3", function(Value) 
-
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/dark%20h%20ub%20%F0%9F%90%BA%20parte%203.lua"))()
 print("Hello World!")
 end})
 
