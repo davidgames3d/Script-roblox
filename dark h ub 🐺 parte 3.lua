@@ -41,3 +41,13 @@ Tab1:AddButton({"Nightmare script", function(Value)
 loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Nightmare-script-56265"))()
 print("Hello World!")
 end})
+
+Tab1:AddButton({"flutuar", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-FLOAT-SCRIPT-52755"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"Animations Gui v2", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Animations-Gui-V2-39043"))()
+print("Hello World!")
+end})
