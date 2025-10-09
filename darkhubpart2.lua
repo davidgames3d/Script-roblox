@@ -235,35 +235,3 @@ Tab1:AddButton({"Ghost Hub", function(Value)
 loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/GhostHub'))()
 print("Hello World!")
 end})
-
-local Tab1 = Window:MakeTab({"Tower OF Hell", "Tower OF Hell"})
-
-Tab1:AddButton({"2025 script hol", function(Value)
-loadstring(game:HttpGet("https://coolxplo.github.io/DP-HUB-coolxplo/Tower%20Of%20Hell.lua", true))()
-print("Hello World!")
-end})
-
-Tab1:AddButton({"Ez Hub", function(Value)
-loadstring(game:HttpGet("https://pastebin.com/raw/VMBwfh0J"))()
-print("Hello World!")
-end})
-
-Tab1:AddButton({"SasWares", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/centerepic/sasware_TowerOfHell/main/TowerOfHell_sw.lua"))()
-print("Hello World!")
-end})
-
-Tab1:AddButton({"SprinHub", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/dqvh/dqvh/main/SprinHub",true))()
-print("Hello World!")
-end})
-
-Tab1:AddButton({"P1ne Loader", function(Value)
-loadstring(game:HttpGet("https://raw.githubusercontent.com/p1neru/tutor/main/p1ne-injector"))()
-print("Hello World!")
-end})
-
-Tab1:AddButton({"Farm Tiger admin gui", function(Value)
-loadstring(game:HttpGet('https://raw.githubusercontent.com/H17S32/Tiger_Admin/main/MAIN'))() 
-print("Hello World!")
-end})
