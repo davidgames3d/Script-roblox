@@ -715,3 +715,20 @@ Tab1:AddButton({"expansão de domínio 🔴🔵", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/expans%C3%A3o%20de%20dom%C3%ADnio.lua"))()
 print("Hello World!")
 end})
+
+local Tab1 = Window:MakeTab({"scritpts novos", "main"})
+
+Tab1:AddButton({"DRIP HUB/SHADOW HUB", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Shadow-Hub-27866"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"sec HUB admin", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-brookhaven-v2-admin-54462"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"chaos hub", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Chaos-Hub-58124"))()
+print("Hello World!")
+end})
