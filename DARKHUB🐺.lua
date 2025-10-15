@@ -69,6 +69,11 @@ Tab1:AddSlider({
     end
 })
 
+Tab1:AddButton({"server vazio by fã_do_plock_yt", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/caomod2077/Script/refs/heads/main/Free%20Private%20Server.lua"))()
+print("Hello World!")
+end})
+
 Tab1:AddButton({"parte 2 do hub", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/darkhubpart2.lua"))()
 print("Hello World!")
