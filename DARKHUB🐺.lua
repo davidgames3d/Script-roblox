@@ -833,6 +833,11 @@ end})
 
 local Tab1 = Window:MakeTab({"blox fruit🍎", "blox fruit🍎"})
 
+Tab1:AddButton({"auto chest by fã_do_plock_yt", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/PlockScripts/AutoChest/refs/heads/main/Plock.lua"))()
+print("Hello World!")
+end})
+
 Tab1:AddButton({"raito hub", function(Value)
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Efe0626/RaitoHub/main/Script"))()
 print("Hello World!")
