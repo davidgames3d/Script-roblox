@@ -31,7 +31,7 @@ Tab1:AddDiscordInvite({
     Name = "davidgames3d server",
     Description = "Junte-se a nós",
     Logo = "rbxassetid://6604011398",
-    Invite = "https://discord.gg/qXkvYQYKZG",
+    Invite = "https://discord.gg/f3RqTwMy5k",
 })
 
 local Paragraph = Tab1:AddParagraph({"aviso", "entre no nosso server para novos scripts e vídeos no YouTube para ajudar o criador"})
