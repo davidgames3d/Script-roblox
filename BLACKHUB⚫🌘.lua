@@ -54,7 +54,7 @@ print("Hello World!")
 end})
 
 local teleportando = false -- variável de controle
-local lobbyPos = Vector3.new(0, 10, 0) -- mude para a posição do lobby
+local lobbyPos = Vector3.new(-4994.08, 309.75,18.06) -- mude para a posição do lobby
 
 Tab1:AddToggle({
     Name = "TELEPORTAR PARA O LOBBY",
@@ -86,7 +86,7 @@ Tab1:AddToggle({
 })
 
 local Toggle1 = Tab1:AddToggle({
-    Name = "Toggle",
+    Name = "SPY PLAYERS",
     Description = "This is a <font color='rgb(88, 101, 242)'>Toggle</font> Example",
     Default = false 
 })
