@@ -84,3 +84,55 @@ Tab1:AddToggle({
         end
     end
 })
+
+local Toggle1 = Tab1:AddToggle({
+    Name = "Toggle",
+    Description = "This is a <font color='rgb(88, 101, 242)'>Toggle</font> Example",
+    Default = false 
+})
+
+-- Função para criar a hitbox ou marcador
+local function createMarker(player)
+    if player.Character and not player.Character:FindFirstChild("Highlight") then
+        local highlight = Instance.new("Highlight")
+        highlight.Name = "Highlight"
+        highlight.Adornee = player.Character
+        highlight.FillColor = Color3.fromRGB(255, 0, 0) -- cor do hitbox
+        highlight.OutlineColor = Color3.fromRGB(255, 255, 255)
+        highlight.Parent = game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui")
+    end
+end
+
+-- Função para remover marcador
+local function removeMarker(player)
+    if player.Character and player.Character:FindFirstChild("Highlight") then
+        player.Character.Highlight:Destroy()
+    end
+end
+
+Toggle1:Callback(function(Value)
+    local Players = game:GetService("Players")
+    
+    if Value then
+        -- Adiciona hitbox para todos os jogadores
+        for _, player in pairs(Players:GetPlayers()) do
+            if player ~= Players.LocalPlayer then
+                createMarker(player)
+            end
+        end
+
+        -- Detecta novos jogadores que entrarem
+        Players.PlayerAdded:Connect(function(player)
+            if player ~= Players.LocalPlayer then
+                createMarker(player)
+            end
+        end)
+    else
+        -- Remove todos os highlights
+        for _, player in pairs(Players:GetPlayers()) do
+            if player ~= Players.LocalPlayer then
+                removeMarker(player)
+            end
+        end
+    end
+end)
