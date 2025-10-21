@@ -974,6 +974,12 @@ loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-KEYLESS-Grow-a
 print("Hello World!")
 end})
 
+Tab1:AddButton({"Black redz X", 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/BLACKHUB%E2%9A%AB%F0%9F%8C%98.lua"))()
+function(Value)
+print("Hello World!")
+end})
+
 local Tab1 = Window:MakeTab({"natural disastre🌋", "natural disastre🌋"})
 
 Tab1:AddButton({"xvc hub", function(Value)
@@ -1159,6 +1165,12 @@ print("Hello World!")
 end})
 
 local Tab1 = Window:MakeTab({"murder Mystery 2🔪", "murder Mystery 2🔪"})
+
+Tab1:AddButton({"Black redz X", 
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/BLACKHUB%E2%9A%AB%F0%9F%8C%98.lua"))()
+function(Value)
+print("Hello World!")
+end})
 
 Tab1:AddButton({"instawin and xray", function(Value)
 loadstring(game:HttpGet("https://rawscripts.net/raw/Murder-Mystery-2-KEYLESS-InstaWin-AutoFarm-Kill-all-XRay-nd-more-by-Moondiety-48644"))()
