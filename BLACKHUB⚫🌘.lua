@@ -139,3 +139,47 @@ end)
 
 local Tab1 = Window:MakeTab({"glow a GARDEN🌼", "main"})
 
+Tab1:AddButton({"glow a garden Farm UPDATE", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-KEYLESS-Grow-a-garden-INFINITE-MONEY-DUPE-auto-farm-script-41396"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"forge hub", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-Forge-Hub-41363"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"Neox hub", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-Neox-Hub-41972"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"ZapHub", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-The-Best-GAG-Script-ZapHub-Keyless-51562"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"Lumix", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-SEE-WHAT-PETS-BEFORE-HATCHING-OP-41901"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"eF Hub", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-eF-Hub-45212"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"Stock bot", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-Grow-a-Garden-Stock-bot-41500"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"Freeze All Pets", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-Freeze-All-Pets-43750"))()
+print("Hello World!")
+end})
+
+Tab1:AddButton({"Blackhub sheckles", function(Value)
+loadstring(game:HttpGet("https://rawscripts.net/raw/Grow-a-Garden-Blackhub-Infinite-Sheckles-41369"))()
+print("Hello World!")
+end})
