@@ -11,7 +11,6 @@ local Tab1 = Window:MakeTab({"menu🏠", "house"})
 
 Tab1:AddButton({"dark hub🐺", function(Value) 
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/DARKHUB🐺.lua"))()
-print("Hello World!")
 end})
 
 Tab1:AddDiscordInvite({
