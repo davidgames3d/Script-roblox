@@ -79,6 +79,11 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-r
 print("Hello World!")
 end})
 
+Tab1:AddButton({"Black Redz X", function(Value)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/BLACKHUB%E2%9A%AB%F0%9F%8C%98.lua"))()
+print("Hello World!")
+end})
+
 local Tab1 = Window:MakeTab({"universal🌏", "universal🌏"})
 
 Tab1:AddButton({"c00lkidd", function(Value)
