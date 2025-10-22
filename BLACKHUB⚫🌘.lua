@@ -136,6 +136,71 @@ Toggle1:Callback(function(Value)
     end
 end)
 
+--// LocalScript
+local Players = game:GetService("Players")
+local LocalPlayer = Players.LocalPlayer
+local selectedPlayer = nil
+
+-- Cria o dropdown
+local Dropdown = Tab1:AddDropdown({
+	Name = "Players List",
+	Description = "Selecione o <font color='rgb(88, 101, 242)'>Jogador</font>",
+	Options = {},
+	Default = "",
+	Flag = "dropdown_jogador",
+	Callback = function(Value)
+		selectedPlayer = Value -- guarda o nome do jogador selecionado
+	end
+})
+
+-- Função para atualizar a lista de jogadores
+local function UpdateDropdown()
+	local options = {}
+	for _, player in ipairs(Players:GetPlayers()) do
+		if player ~= LocalPlayer then
+			table.insert(options, player.Name)
+		end
+	end
+	Dropdown:SetOptions(options)
+end
+
+-- Atualiza ao iniciar
+UpdateDropdown()
+
+-- Botão para atualizar manualmente
+Tab1:AddButton({
+	Name = "🔄 Atualizar Lista",
+	Callback = function()
+		UpdateDropdown()
+	end
+})
+
+-- Botão para teleportar até o jogador selecionado
+Tab1:AddButton({
+	Name = "🚀 Teleportar até o jogador",
+	Callback = function()
+		if not selectedPlayer then
+			warn("Nenhum jogador selecionado!")
+			return
+		end
+		
+		local target = Players:FindFirstChild(selectedPlayer)
+		if target and target.Character and target.Character:FindFirstChild("HumanoidRootPart") then
+			local hrp = LocalPlayer.Character and LocalPlayer.Character:FindFirstChild("HumanoidRootPart")
+			if hrp then
+				hrp.CFrame = target.Character.HumanoidRootPart.CFrame + Vector3.new(0, 3, 0) -- teleporta acima do jogador
+				print("Teleportado até " .. selectedPlayer)
+			end
+		else
+			warn("Jogador inválido ou sem personagem!")
+		end
+	end
+})
+
+-- Atualiza automaticamente quando um jogador entra ou sai
+Players.PlayerAdded:Connect(UpdateDropdown)
+Players.PlayerRemoving:Connect(UpdateDropdown)
+
 local Tab1 = Window:MakeTab({"glow a GARDEN🌼", "main"})
 
 Tab1:AddButton({"glow a garden Farm UPDATE", function(Value)
