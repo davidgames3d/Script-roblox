@@ -10,7 +10,7 @@ local playerGui = player:WaitForChild("PlayerGui")
 local texto = "DAVID TEAM ESTÁ NO SERVER"
 
 -- Música (troque pelo seu ID rbxassetid://)
-local musicAssetId = "rbxassetid://1849559515" -- exemplo, troque se quiser
+local musicAssetId = "rbxassetid://75940515128169" -- exemplo, troque se quiser
 
 -- ====== EXEMPLOS DE LOADSTRINGS ======
 -- Substitua essas strings pelas que você quer executar.
