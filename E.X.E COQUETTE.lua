@@ -53,34 +53,34 @@ local loadingFrame = new("Frame", {
     Name="LoadingFrame", Parent=screenGui,
     AnchorPoint=Vector2.new(0.5,0.5), Position=UDim2.new(0.5,0,0.12,0),
     Size=UDim2.new(0.6,0,0.08,0), BackgroundColor3=Color3.fromRGB(0,0,0),
-    BorderSizePixel=0
+    BorderSizePixel=0, ZIndex = 1
 })
 new("UICorner",{Parent=loadingFrame, CornerRadius=UDim.new(0,8)})
 local loadingTitle = new("TextLabel", {
     Parent=loadingFrame, AnchorPoint=Vector2.new(0.5,0), Position=UDim2.new(0.5,0,0.06,0),
     Size=UDim2.new(0.98,0,0.4,0), BackgroundTransparency=1,
     Text = PANEL_TITLE, TextColor3=Color3.new(1,1,1),
-    Font=Enum.Font.SourceSansBold, TextSize=20
+    Font=Enum.Font.SourceSansBold, TextSize=20, ZIndex = 2
 })
 local loadingSubtitle = new("TextLabel", {
     Parent=loadingFrame, AnchorPoint=Vector2.new(0.5,0), Position=UDim2.new(0.5,0,0.45,0),
     Size=UDim2.new(0.98,0,0.38,0), BackgroundTransparency=1,
     Text = "Inicializando Sistema...", TextColor3=Color3.new(1,1,1),
-    Font=Enum.Font.SourceSans, TextSize=16
+    Font=Enum.Font.SourceSans, TextSize=16, ZIndex = 2
 })
 local barOuter = new("Frame", {
     Parent=loadingFrame, AnchorPoint=Vector2.new(0.5,1), Position=UDim2.new(0.5,0,0.96,0),
-    Size=UDim2.new(0.98,0,0.32,0), BackgroundTransparency=1
+    Size=UDim2.new(0.98,0,0.32,0), BackgroundTransparency=1, ZIndex = 2
 })
 local barBg = new("Frame", {
     Parent=barOuter, AnchorPoint=Vector2.new(0.5,0.5), Position=UDim2.new(0.5,0,0.5,0),
     Size=UDim2.new(1,0,0.7,0), BackgroundColor3=Color3.new(1,1,1),
-    BackgroundTransparency=0.9, BorderSizePixel=0
+    BackgroundTransparency=0.9, BorderSizePixel=0, ZIndex = 2
 })
 new("UICorner",{Parent=barBg, CornerRadius=UDim.new(0,8)})
 local barFill = new("Frame", {
     Parent=barBg, AnchorPoint=Vector2.new(0,0), Position=UDim2.new(0,0,0,0),
-    Size=UDim2.new(0,0,1,0), BackgroundColor3=Color3.new(1,1,1), BorderSizePixel=0
+    Size=UDim2.new(0,0,1,0), BackgroundColor3=Color3.new(1,1,1), BorderSizePixel=0, ZIndex = 3
 })
 new("UICorner",{Parent=barFill, CornerRadius=UDim.new(0,6)})
 
