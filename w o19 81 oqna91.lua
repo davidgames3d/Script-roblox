@@ -76,3 +76,56 @@ Tab:AddSlider({
         end
     end
 })
+
+local Tab = Window:MakeTab({
+	Name = "Troll",
+	Icon = "rbxassetid://6862780932",
+	PremiumOnly = false
+})
+
+Tab:AddButton({
+	Name = "C00lkidd v2 gui",
+	Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/14EU4i8n",true))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "KaterHub troll gui",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/KATERGaming/Roblox/main/KaterHub.Lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "MoonUI V10 TROLL",
+	Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/IlikeyocutgHAH12/MoonUI-v10-/main/MoonUI%20v10'))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "System Broken",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/H20CalibreYT/SystemBroken/main/script"))()
+  	end    
+}) 
+
+Tab:AddButton({
+	Name = "trolling Gui life In paridise",
+	Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Life-in-Paradise-trolling-gui-64351"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "brookhaven troll!",
+	Callback = function() loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Brookhaven-Best-Troll-Script-64024"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "ban orbitX",
+	Callback = function()	loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fake-Ban-Made-by-OrbitX-43820"))()
+  	end    
+})
