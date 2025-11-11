@@ -129,3 +129,17 @@ Tab:AddButton({
 	Callback = function()	loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Fake-Ban-Made-by-OrbitX-43820"))()
   	end    
 })
+
+Tab:AddButton({
+	Name = "pandora",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/pandora.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "keyboard",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/keyboard.lua"))()
+  	end    
+})
