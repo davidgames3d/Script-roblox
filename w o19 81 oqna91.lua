@@ -143,3 +143,11 @@ Tab:AddButton({
 loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/keyboard.lua"))()
   	end    
 })
+
+Tab:AddButton({
+	Name = "brookhaven RP troll plues",
+	Callback = function()
+loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-TROLL-PLAY-MUSIC-KICK-PEOPLE-PLUES-More-64534"))()
+  	end    
+})
+
