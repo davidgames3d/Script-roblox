@@ -1,3 +1,4 @@
+
 local Players = game:GetService("Players")
 local TweenService = game:GetService("TweenService")
 local Lighting = game:GetService("Lighting")
@@ -74,11 +75,11 @@ layout.Padding = UDim.new(0,10)
 
 -- Tabela de scripts (adicione quantos quiser)
 local Scripts = {
-    {Name = "Fly v3", Load = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/dqtix/fly/main/v3.lua"))()]]},
+    {Name = "Fly v3", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-fly-Gui-v5-64340"))()]]},
     {Name = "Infinite Yield", Load = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()]]},
     {Name = "Owl Hub", Load = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()]]},
     {Name = "Dex Explorer", Load = [[loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()]]},
-    {Name = "BTools", Load = [[loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()]]},{Name = "cartola hub", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Cartola-Hub-58122"))()]]},{Name = "c00lgui", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-c00lgui-Reborn-Rc7-By-v3rx-64424"))()]]},{Name = "tiger x hub", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-tiger-x-hub-21766"))()]]},{Name = "ghost hub", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ghosthub-free-premium-features-62168"))()]]},{Name = "rochips remake", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-rochips-panel-remake-28099"))()]]},
+    {Name = "BTools", Load = [[loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()]]},{Name = "cartola hub", Load = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/Davi999z/Cartola-Hub/refs/heads/main/Brookhaven",true))()]]},{Name = "c00lgui", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-c00lgui-Reborn-Rc7-By-v3rx-64424"))()]]},{Name = "tiger x hub", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-tiger-x-hub-21766"))()]]},{Name = "ghost hub", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-Ghosthub-free-premium-features-62168"))()]]},{Name = "rochips remake", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-rochips-panel-remake-28099"))()]]},
 }
 
 local buttons = {}
