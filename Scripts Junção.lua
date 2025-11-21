@@ -78,7 +78,7 @@ local Scripts = {
     {Name = "Infinite Yield", Load = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()]]},
     {Name = "Owl Hub", Load = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))()]]},
     {Name = "Dex Explorer", Load = [[loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/Dex%20Explorer.txt"))()]]},
-    {Name = "BTools", Load = [[loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()]]},{Name = "cartola hub", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Cartola-Hub-58122"))()]]},
+    {Name = "BTools", Load = [[loadstring(game:HttpGet("https://cdn.wearedevs.net/scripts/BTools.txt"))()]]},{Name = "cartola hub", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Brookhaven-RP-Cartola-Hub-58122"))()]]},Name = "tiger x hub", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-tiger-x-hub-21766"))()]]},Name = "c00lgui reborn", Load = [[loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-c00lgui-Reborn-Rc7-By-v3rx-64424"))()]]},Name = "black hub", Load = [[loadstring(game:HttpGet("https://raw.githubusercontent.com/davidgames3d/Script-roblox/main/BLACKHUB%E2%9A%AB%F0%9F%8C%98.lua"))()]]},
 }
 
 local buttons = {}
